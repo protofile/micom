@@ -43,6 +43,9 @@ h1 a,h2 a,h3 a{
 .ratio-16{
     padding-top: 56.25%;
 }
+.ratio-135{
+    padding-top: 135%;
+}
 
 a.bt{
     display: inline-block;
@@ -1747,14 +1750,9 @@ section.photo .container{
 }
 
 .share-group{
-    background: #212121;
     width: 100%;
     position: relative;
     float: left;
-    padding: 10px 7px;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
     margin-bottom: 30px;
 }
 .share-group span,
@@ -1763,19 +1761,20 @@ section.photo .container{
     text-align: center;
 }
 .share-group span{
-    font-size: 14px;
-    color: #fff;
+    font-size: 12px;
+    margin-top: 8px;
+    color: #333;
     margin-bottom: 10px;
-    width: 60px;
     float: left;
     padding-top: 8px;
     font-weight: 700;
+    text-align: left;
 }
 .share-group a{
     width: 36px;
     height: 36px;
     background: #fff;
-    float: right;
+    float: left;
     padding-top: 4px;
     margin-right: 10px;
     font-size: 18px;
@@ -2207,6 +2206,136 @@ section.photo .container{
 }
 .timeline-wrap .item.active .is-2::before{
     top: 36px;
+}
+
+.author-cover{
+    width: 100%;
+    float: left;
+    background: #fff;
+    position: relative;
+    z-index: 3;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.1);
+    border: 1px solid #efefef;
+}
+.author-cover .pic{
+    width: 80px;
+    float: left;
+}
+.bg-lighter{
+    background: #f4f4f4;
+}
+.author-cover .text{
+    width: calc(100% - 80px);
+    float: left;
+    padding: 10px 10px 10px 20px;
+}
+.author-cover .text h5{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.author-cover .text p{
+    font-size: 12px;
+}
+.author-cover-wrap .share-group{
+    margin-top: 20px;
+    text-align: left;
+    width: 100%;
+}
+.author-cover-wrap .share-group span{
+    padding-top: 0;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+.author-cover-wrap .share-group a{
+    border: 1px solid #dedede;
+    display: inline-block;
+    color: #777;
+    margin-right: 5px;
+    padding-top: 3px;
+}
+.author-cover .counter{
+    width: 100%;
+    float: left;
+    border-top: 1px solid #dedede;
+}
+.author-cover .counter .boxy{
+    width: 50%;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 0;
+    border-right: 1px solid #dedede;
+}
+.author-cover .counter .boxy:last-child{
+    border-right: none;
+}
+.author-cover .counter .boxy span{
+    width: 100%;
+    float: left;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.list-6{
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+.list-6 li{
+    width: 100%;
+    float: left;
+    background-color: #fafafa;
+    border: 1px solid #efefef;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.list-6 .pic{
+    width: 100%;
+    float: left;
+}
+.list-6 .text{
+    width: 100%;
+    float: left;
+    padding: 10px 0 0;
+}
+.list-6 .text h3{
+    font-size: 15px;
+    font-weight: 700;
+}
+.list-6 .text h3 a{
+    color: #333;
+}
+.list-6 .text h3 a:hover{
+    color: #982323;
+}
+.list-6 .text span{
+    font-size: 11px;
+    color: #777;
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+}
+.list-6 .text p{
+    font-size: 13px;
+    color: #333;
+}
+
+.pagination{
+    padding: 0 20px;
+    max-width: 300px;
+    margin: auto;
+    justify-content: space-between;
+}
+.pagination a{
+    font-size: 13px;
+    color: #777;
+}
+.pagination a.active{
+    color: #982323;
+    font-weight: 700;
+    border-bottom: 2px solid #982323;
 }
 
 @media only screen and (max-width: 567px){
