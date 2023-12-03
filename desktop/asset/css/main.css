@@ -17,7 +17,7 @@ h1 a,h2 a,h3 a{
     overflow-x: hidden;
 }
 
-.container.detail-page{
+.container.max-w-1024{
     max-width: 1024px;
 }
 
@@ -843,7 +843,7 @@ a.bt.bt-grey:hover{
 }
 
 .mid-ct .banner{
-    padding: 20px;
+    padding: 10px;
     background: #f4f4f4;
 }
 .mid-ct .column{
@@ -1684,7 +1684,7 @@ section.photo .container{
 
 .special-news{
     color: #333;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     padding: 15px 0 20px 120px;
     position: relative;
@@ -2204,7 +2204,7 @@ section.photo .container{
 .photo-grid .item:nth-child(6){
     right: 0;
     top: 480px;
-    padding: 60px 30px;
+    padding: 60px 30px 0;
 }
 .photo-grid .item:nth-child(6) p{
     font-size: 14px;
@@ -2579,6 +2579,54 @@ section.photo .container{
     color: #982323;
     font-weight: 700;
     border-bottom: 2px solid #982323;
+}
+
+@media only screen and (max-width: 1600px){
+    .mid-ct .container,
+    .headline .container,
+    .newsticker .container,
+    .video .container,
+    .photo .container,
+    .detail .container{
+        max-width: 1024px;
+    }
+
+    .list-3 li .pic{
+        width: 100px;
+    }
+    .list-3 li .pic .ratio{
+        padding-top: 100px;
+    }
+    .list-3 li .text{
+        width: calc(100% - 160px);
+    }
+    .list-3 li .text h3{
+        font-size: 16px;
+    }
+    .list-3 li:first-child .text h3{
+        font-size: 18px !important;
+    }
+    .list-3 li:nth-child(6n) .text h3, .list-3 li:nth-child(6n + 1) .text h3{
+        font-size: 14px;
+    }
+    .card-3 .text h3{
+        font-size: 12px;
+    }
+    .card-3 .text span{
+        font-size: 11px;
+    }
+    .card-3 .ratio-16{
+        padding-top: 100%;
+    }
+    .list-4 .text h3{
+        font-size: 14px;
+    }
+    .list-4 .text span{
+        font-size: 11px;
+    }
+    .ti{
+        font-size: 16px;
+    }
 }
 
 @media only screen and (max-width: 1366px){
