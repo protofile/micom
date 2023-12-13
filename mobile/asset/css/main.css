@@ -2144,7 +2144,7 @@ section.photo .container{
 .timeline-wrap .social-bt a{
     width: 24px;
     height: 24px;
-    float: left;
+    float: left; 
     color: #999;
     text-align: center;
     margin-right: 10px;
