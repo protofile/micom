@@ -3136,6 +3136,51 @@ section.photo .container{
     margin-bottom: -2px;
 }
 
+/*INFOGRAFIS POPUP*/
+.magnify-popup{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    padding: 5% 10%;
+}
+.magnify-popup img{
+    width: 100%;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border: 10px solid #fff;
+}
+.zoomable:hover{
+    cursor: zoom-in;
+}
+.magnify-popup .close-bt{
+    width: 40px;
+    height: 40px;
+    background: #000;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+.magnify-popup .close-bt{
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    padding-top: 5px;
+}
+.magnify-popup img{
+    pointer-events: none;
+}
+
+
 @media only screen and (max-width: 1600px){
     .mid-ct .container,
     .headline .container,
