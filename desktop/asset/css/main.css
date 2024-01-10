@@ -3079,6 +3079,7 @@ section.photo .container{
     background-size: contain;
     background-position: center;
     padding-top: 22px;
+    text-align: center;
 }
 .dot {
     margin-left: 10px;
