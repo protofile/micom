@@ -3076,9 +3076,8 @@ section.photo .container{
     background-image: url(../images/frame-number.svg);
     background-repeat: no-repeat;
     background-size: contain;
-}
-.cardContent strong{
-    padding-left: 6px ;
+    background-position: center;
+    padding-top: 22px;
 }
 .dot {
     margin-left: 10px;
