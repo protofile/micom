@@ -3064,13 +3064,15 @@ section.photo .container{
 }
 
 /*QURAN*/
-
+a:hover {color: #0e99ac;}
+a { color: #363636; text-decoration: none;}
 .main-card{
     padding-bottom: 20px;
 }
 .item-arabic-header{
     margin-top: 10px;
     text-align: right;
+    /* font-size: 30px; */
 }
 .cardContent {
     position: relative;
@@ -3176,6 +3178,72 @@ section.photo .container{
   font-size: 20px;
 }
 
+/* QURAN DETAIL */
+.fitur-ayat{
+    margin-bottom: 10px;
+}
+.fitur-ayat a img{
+    margin-top: 20px;
+    padding-right: 5px;
+    width: 2%;
+}
+.cardContentDetail {
+    position: relative;
+    background-image: url(../images/frame-number.svg);
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: left;
+    padding-top: 30px;
+    padding-left: 17px;
+    margin-left: 15px;
+    text-align: left;
+}
+.bg-header-quran-detail{
+    background-image: url(../images/headerKalam.png);
+    background-position: top;
+    display: flex;
+    background-position-y: -310px ;
+    background-repeat: no-repeat;
+    background-size: 140%;
+}
+
+.post-header ul li a{
+    color: #fff;
+}
+
+.header-surah h1{
+    color: #fff;
+}
+
+.subtitle-surah h2{
+    color: #fff;
+}
+
+.subtitle-surah{
+    /* display: flex; */
+    color: #fff;
+}
+
+.font-size-bt-group-quran-detail{
+    margin-top:50px;
+}
+
+.ayat-arabic{
+    font-size: 40px;
+    color: #000;
+    text-align: right;
+}
+
+.items-ayat{
+    padding-top: 110px;
+    margin-bottom:10px;
+    border-bottom: 1px solid #dedede;
+}
+.items-ayat-copy{
+    margin-top:20px;
+    margin-bottom:10px;
+    border-bottom: 1px solid #dedede;
+}
 
 @media only screen and (max-width: 1600px){
     .mid-ct .container,
