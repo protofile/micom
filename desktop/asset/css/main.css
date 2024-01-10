@@ -20,10 +20,7 @@ h1 a,h2 a,h3 a{
     position: relative;
     background-image: url(../images/frame-number.svg);
     background-repeat: no-repeat;
-    background-size: 80%;
-    margin-left: 9px;
-    top: 7px;
-    left: 12px;
+    background-size: contain;
 }
 .cardContent strong{
     padding-left: 6px ;
