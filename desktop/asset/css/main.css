@@ -3070,6 +3070,7 @@ section.photo .container{
 }
 .item-arabic-header{
     margin-top: 10px;
+    text-align: right;
 }
 .cardContent {
     position: relative;
