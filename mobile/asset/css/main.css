@@ -2678,17 +2678,20 @@ section.photo .container{
     padding-top: 10px;
     padding-bottom: 10px;
 }
+.sticky-element audio{
+    width: 100%;
+}
 .sticky-element p{
     padding-bottom: 5px;
 }
 .sticky-element {
+    width: 100%;
     position: fixed;
-    bottom: 40px; 
-    right: 25px;
+    bottom: 0px; 
+    right: 0px;
     background-color: #f1f3f4;
     color: #000000;
-    border-radius: 20px;
-    padding: 20px;
+    padding: 10px 20px;
     z-index: 999;
 }
 
