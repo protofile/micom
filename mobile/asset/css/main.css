@@ -1828,6 +1828,8 @@ section.photo .container{
     top: 0!important;
     width: 100%;
     height: 100%;
+    transform: translateZ(0)!important;
+    -moz-transform: translateZ(0)!important;
     -webkit-transform: translateZ(0)!important;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1986,7 +1988,7 @@ section.photo .container{
     padding-bottom: 0;
     border-bottom: none;
 }
-.list-4.no-pic .text h3 a:hover{}
+
 .list-4.no-pic .text span{
     color: rgba(255,255,255,0.7);
 }
@@ -2758,6 +2760,25 @@ section.photo .container{
 }
 .items-ayat:last-child{
     border-bottom: none;
+}
+
+/* STATIC */
+.title-about{
+    padding-top:40px;
+    padding-bottom: 40px;
+}
+
+.about-static p{
+    text-align:justify;
+}
+
+.text-content-pedoman h1{
+    padding-top:30px;
+    padding-bottom:20px;
+}
+.text-content-pedoman p{
+    text-align:justify;
+    padding-bottom: 20px;
 }
 
 @media only screen and (max-width: 567px){
