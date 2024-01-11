@@ -3212,14 +3212,37 @@ section.photo .container{
 }
 
 /* QURAN DETAIL */
+.sticky-element p{
+    padding-bottom: 15px;
+}
+.sticky-element {
+  position: fixed;
+  bottom: 30px; 
+  right: 30px;
+  background-color: #439FD3;
+  color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  z-index: 999;
+}
+
 .fitur-ayat{
     margin-bottom: 10px;
 }
-.fitur-ayat a img{
-    margin-top: 20px;
-    padding-right: 5px;
-    width: 2%;
+.fitur-ayat a{
+    margin-right: 10px;
+    color: #439FD3;
+    padding-left: 8px;
 }
+
+.fitur-ayat .fa-book{
+    padding-left: 10px;
+}
+
+.fitur-ayat .fa-angle-right{
+    font-size: 15px;
+}
+
 .cardContentDetail {
     position: relative;
     background: url(../images/frame-number.svg) no-repeat center;
@@ -3321,6 +3344,7 @@ section.photo .container{
     .list-7 li .text:hover{
         top: calc(70% - 5px);
     }
+
 }
 
 @media only screen and (max-width: 1366px){
