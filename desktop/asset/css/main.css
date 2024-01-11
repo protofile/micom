@@ -3212,18 +3212,35 @@ section.photo .container{
 }
 
 /* QURAN DETAIL */
+.tafsir-text-source{
+    font-size:10px;
+    font-style: italic;
+    padding-top:10px;
+}
+.tafsir-items h1{
+    font-size: 20px;
+}
+.tafsir-items-detail .tafsir-text{
+    font-size:14px;
+    text-align: justify;
+}
+.tafsir-items-detail{
+    border-top: 1px solid #dedede;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 .sticky-element p{
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 .sticky-element {
-  position: fixed;
-  bottom: 30px; 
-  right: 30px;
-  background-color: #439FD3;
-  color: #fff;
-  border-radius: 20px;
-  padding: 20px;
-  z-index: 999;
+    position: fixed;
+    bottom: 40px; 
+    right: 30px;
+    background-color: #f1f3f4;
+    color: #000000;
+    border-radius: 20px;
+    padding: 20px;
+    z-index: 999;
 }
 
 .fitur-ayat{
