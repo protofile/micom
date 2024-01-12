@@ -28,4 +28,9 @@ $(document).ready(function(){
         },2000);
     });
 
+    //POPUP
+    $(".popup .close-bt").click(function(){
+        $(".overlay").removeClass("show");
+    });
+
 });

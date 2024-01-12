@@ -59,7 +59,9 @@
                     </div>
                     <div class="columns is-vcentered mb-0">
                         <div class="column is-2 pb-0">
-                            <img src="asset/images/e-paper-banner.png" alt="">
+                            <div class="e-paper-img">
+                                <img src="asset/images/bank/pic1.jpeg" alt="">
+                            </div>
                         </div>
                         <div class="column is-10 pb-0">
                             <div class="columns is-vcentered">
@@ -837,11 +839,24 @@
 
     </div>
 
+    <div class="overlay">
+        <div class="popup">
+            <a href="#">
+                <img src="asset/images/banner_580x400.png" alt="">
+            </a>
+            <div class="close-bt"><i class="fa fa-times"></i></div>
+        </div>
+    </div>
+
     <script src="asset/js/jquery-1.11.0.min.js"></script>
     <script src="asset/js/owl.carousel.min.js"></script>
     <script src="asset/js/main.js"></script>
     <script>
         $(document).ready(function(){
+
+            /*setTimeout(function() {
+                $(".overlay").addClass("show");
+            }, 5000);*/
 
             $(".newsticker-slider").owlCarousel({
                 singleItem: true,
