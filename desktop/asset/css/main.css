@@ -3253,12 +3253,8 @@ section.photo .container{
     padding-left: 8px;
 }
 
-.fitur-ayat .fa-book{
-    padding-left: 10px;
-}
-
-.fitur-ayat .fa-angle-right{
-    font-size: 15px;
+.fitur-ayat i{
+    margin: 0 5px;
 }
 
 .cardContentDetail {
