@@ -246,13 +246,15 @@ a.bt.bt-grey:hover{
     color: #982323;
 }
 
-.card-1 .text h3{
+.card-1 .text h3,
+.card-1 .text h2{
     font-size: 15px;
     font-family: 'Libre Baskerville', serif;
     margin-bottom: 5px;
     margin-top: 5px;
 }
-.card-1 .text h3 a{
+.card-1 .text h3 a,
+.card-1 .text h2 a{
     font-weight: 700;
     color: #333;
 }
