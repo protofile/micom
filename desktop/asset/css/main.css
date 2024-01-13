@@ -1662,6 +1662,48 @@ section.photo .container{
     font-family: 'Lato', sans-serif;
 }
 
+.article p{
+    margin-bottom: 10px;
+    width: 100%;
+    float: left;
+}
+.article h1,
+.article h2,
+.article h3,
+.article h4,
+.article h5,
+.article h6{
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+}
+
+.article h6{
+    font-size: 14px;
+    font-weight: 700;
+}
+.article h5{
+    font-size: 16px;
+    font-weight: 700;
+}
+.article h4{
+    font-size: 18px;
+    font-weight: 700;
+}
+.article h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+.article h2{
+    font-size: 22px;
+    font-weight: 700;
+}
+.article h1{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
 .related-tags li{
     display: inline-block;
     font-weight: 700;
@@ -3413,6 +3455,18 @@ section.photo .container{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.article.contact-us p{
+    padding-left: 25px;
+    position: relative;
+}
+.article.contact-us p i{
+    position: absolute;
+    left: 0;
+    top: 7px;
+    text-align: center;
+    width: 20px;
 }
 
 @media only screen and (max-width: 1600px){
