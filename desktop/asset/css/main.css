@@ -3607,6 +3607,27 @@ section.photo .container{
         font-size: 16px;
     }
 
+    /*MICOM TV*/
+    .list-8 li{
+        width: 100%;
+    }
+    .list-8 li figure{
+        width: 100px;
+        float: left;
+    }
+    .list-8 li figure.ratio.ratio-16{
+        padding-top: 100px;
+    }
+    .list-8 li .text{
+        width: calc(100% - 100px);
+    }
+    .list-8 li:first-child figure.ratio.ratio-16{
+        width: 100%;
+        padding-top: 56.25%;
+    }
+    .list-8 li:first-child .text{
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 1366px){
