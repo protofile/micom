@@ -19,6 +19,15 @@ $(document).ready(function(){
             $('.back-to-top').removeClass('show');
         }
     });
+
+    $(window).scroll(function(){
+        if ($(window).scrollTop() >= 670) {
+            $('.flying-skycrapper').addClass('sticky');
+        }
+        else {
+            $('.flying-skycrapper').removeClass('sticky');
+        }
+    });
     // scroll to top
     var toTop = $('.back-to-top');
     // logic
