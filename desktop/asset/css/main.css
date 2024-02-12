@@ -3635,6 +3635,9 @@ section.photo .container{
     left: 0;
     bottom: 0;
     background: #ccc;
+    transition: all ease-out 0.3s;
+    -moz-transition: all ease-out 0.3s;
+    -webkit-transition: all ease-out 0.3s;
 }
 .bottom-ads-desktop{
     width: 960px;
@@ -3648,6 +3651,34 @@ section.photo .container{
     background: #111;
     margin: auto;
     display: none;
+}
+.bottom-ads.hide{
+    transform: translateY(100%);
+}
+.bottom-ads .close-bt{
+    width: 60px;
+    background: #fff;
+    border: 1px solid #ddd;
+    position: absolute;
+    height: 20px;
+    top: -20px;
+    left: calc(50% - 30px);
+    text-align: center;
+    border-radius: 6px 6px 0 0;
+    -moz-border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-bottom: none;
+    line-height: 120%;
+}
+.bottom-ads .close-bt:hover{
+    cursor: pointer;
+    color: #f00;
+}
+
+.dpr-banner{
+    width: 100%;
+    height: 100px;
+    float: left;
 }
 
 @media only screen and (max-width: 1600px){
@@ -3725,3 +3756,197 @@ section.photo .container{
         width: 554px;
     }
 }
+
+/*QUICK COUNT*/
+.quick-count-mi{
+    margin: 30px 0;
+}
+.quick-count-mi .container{
+    background: url(../images/quick-count-img/qc-bg.jpg) no-repeat center;
+    background-size: cover;
+    padding-right: 20px;
+}
+.qc-title{
+    padding: 60px 20px 20px 20px;
+}
+.qc-title h4{
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.qc-title h3{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+}
+.paslon{
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.paslon-card{
+    position: relative;
+    z-index: 3;
+    padding-bottom: 0;
+}
+.paslon-card .text{
+    width: 100%;
+    float: left;
+    padding: 10px 20px;
+}
+.paslon-card .text .text-1{
+    width: 60%;
+    float: left;
+    color: #fff;
+}
+.paslon-card .text .text-1 h4{
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.paslon-card .text .text-1 h5{
+    font-size: 12px;
+    font-weight: 700px;
+    white-space: nowrap;
+}
+.paslon-card .text-2{
+    width: 40%;
+    float: left;
+}
+.paslon-card .text-2 .num{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: right;
+    color: #fff;
+}
+.text-footer{
+    width: 100%;
+    float: left;
+    margin-top: 3px;
+}
+.text-footer p{
+    color: #333;
+    font-size: 12px;
+}
+.text-footer p span{
+    display: inline-block;
+    margin-right: 30px;
+}
+.counter-bar{
+    width: 94%;
+    height: 120px;
+    background: #444;
+    border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    position: absolute;
+    bottom: 0;
+    left: 3%;
+    z-index: -1;
+    overflow: hidden;
+}
+.counter-bar span{
+    position: absolute;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    left: 0;
+}
+.py-0,
+.columns.py-0 .column{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.counter-bar-2{
+    width: 100%;
+    float: left;
+    height: 30px;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    overflow: hidden;
+}
+.counter-bar-2 span{
+    float: left;
+    height: 30px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    padding-top: 4px;
+}
+.counter-paslon-1{
+    background: #001B8A;
+}
+.counter-paslon-2{
+    background: #00A5FF;
+}
+.counter-paslon-3{
+    background: #D41F26;
+}
+
+@media only screen and (max-width: 1024px){
+    .quick-count-mi .container{
+        padding-right: 0;
+    }
+    .quick-count-mi .columns{
+        display: block;
+    }
+    .quick-count-mi .column{
+        width: 100%;
+        float: left;
+    }
+    .qc-title{
+        padding-top: 20px;
+    }
+    .quick-count-mi .column.is-9{
+        padding: 0 30px;
+    }
+    .paslon{
+        width: 115px;
+        height: 74px;
+        float: left;
+    }
+    .paslon img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .paslon-card{
+        padding-top: 0;
+    }
+    .paslon-card .text{
+        width: calc(100% - 115px);
+        float: left;
+        padding-top: 26px;
+        padding-bottom: 0;
+    }
+    .paslon-card .text-2{
+        padding-top: 5px;
+    }
+    .counter-bar{
+        width: calc(100% - 1.5rem);
+        height: 56px;
+        left: 0.75rem;
+    }
+    
+}
+@media only screen and (max-width: 375px){
+    .paslon{
+        width: 90px;
+        height: 57px;
+    }
+    .paslon-card{
+        margin-bottom: 10px;
+    }
+    .paslon-card .text{
+        width: calc(100% - 90px);
+        padding: 10px 10px 0;
+    }
+    .counter-bar-2 span{
+        font-size: 12px;
+        padding-top: 6px;
+    }
+}
+/*QUICK COUNT*/

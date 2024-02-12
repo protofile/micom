@@ -42,4 +42,8 @@ $(document).ready(function(){
         $(".overlay").removeClass("show");
     });
 
+    $(".bottom-ads .close-bt").click(function(){
+        $(".bottom-ads").toggleClass("hide");
+        $(this).children(".fa").toggleClass("fa-angle-up fa-angle-down");
+    });
 });
