@@ -3766,6 +3766,10 @@ section.photo .container{
     background-size: cover;
     padding-right: 20px;
 }
+.quick-count-mi.detail-page .container{
+    background: #f4f4f4;
+    padding-left: 20px;
+}
 .qc-title{
     padding: 60px 20px 20px 20px;
 }
@@ -3779,6 +3783,10 @@ section.photo .container{
     font-weight: 700;
     margin-bottom: 20px;
     font-family: 'Lato', sans-serif;
+}
+.quick-count-mi.detail-page .qc-title h4,
+.quick-count-mi.detail-page .qc-title h3{
+    text-align: center;
 }
 .paslon{
     width: 100%;
@@ -3884,6 +3892,137 @@ section.photo .container{
 }
 .counter-paslon-3{
     background: #D41F26;
+}
+.counter-bar-2.bigger,
+.counter-bar-2.bigger span{
+    height: 60px;
+}
+.counter-bar-2.bigger span{
+    padding-top: 12px;
+    font-size: 24px;
+}
+.poll-source{
+    width: 100%;
+    height: 60px;
+}
+.poll-source img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.quick-count-mi.detail-page .columns,
+.quick-count-mi.detail-page .column{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.quick-count-mi.detail-page .text-footer{
+    margin-bottom: 20px;
+}
+.qc-tab-ct{
+    width: 100%;
+    float: left;
+    margin-bottom: 30px;
+    display: none;
+}
+.qc-tab-ct.show{
+    display: block;
+}
+.partai-counter{
+    width: calc(100% / 18);
+    float: left;
+    padding: 0 2px;
+    position: relative;
+}
+.partai-counter .logo-partai{
+    background: #fff;
+    width: 100%;
+    float: left;
+}
+.partai-counter .logo-partai figure img{
+    width: 75%;
+    height: 75%;
+    object-fit: contain;
+}
+.partai-counter-bar{
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+    position: relative;
+    height: 200px;
+    position: relative;
+}
+.partai-counter-bar div{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #aaa;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+}
+.partai-counter-bar div::before{
+    content: "";
+    width: 100%;
+    height: 20px;
+    bottom: -20px;
+    left: 0;
+    background: #aaa;
+    position: absolute;
+}
+.partai-counter-bar div span{
+    width: 100%;
+    font-size: 12px;
+    position: absolute;
+    left: 0;
+    top: -20px;
+}
+.partai-counter-bar.partai-1 div,.partai-counter-bar.partai-1 div::before{background: #68e27c;}
+.partai-counter-bar.partai-2 div,.partai-counter-bar.partai-2 div::before{background: #4f0a05;}
+.partai-counter-bar.partai-3 div,.partai-counter-bar.partai-3 div::before{background: #db3732;}
+.partai-counter-bar.partai-4 div,.partai-counter-bar.partai-4 div::before{background: #f9e366;}
+.partai-counter-bar.partai-5 div,.partai-counter-bar.partai-5 div::before{background: #273fa1;}
+.partai-counter-bar.partai-6 div,.partai-counter-bar.partai-6 div::before{background: #93231b;}
+.partai-counter-bar.partai-7 div,.partai-counter-bar.partai-7 div::before{background: #00bceb;}
+.partai-counter-bar.partai-8 div,.partai-counter-bar.partai-8 div::before{background: #ff5000;}
+.partai-counter-bar.partai-9 div,.partai-counter-bar.partai-9 div::before{background: #000000;}
+.partai-counter-bar.partai-10 div,.partai-counter-bar.partai-10 div::before{background: #fa8e00;}
+.partai-counter-bar.partai-11 div,.partai-counter-bar.partai-11 div::before{background: #052f66;}
+.partai-counter-bar.partai-12 div,.partai-counter-bar.partai-12 div::before{background: #0154a2;}
+.partai-counter-bar.partai-13 div,.partai-counter-bar.partai-13 div::before{background: #014224;}
+.partai-counter-bar.partai-14 div,.partai-counter-bar.partai-14 div::before{background: #039;}
+.partai-counter-bar.partai-15 div,.partai-counter-bar.partai-15 div::before{background: #e62129;}
+.partai-counter-bar.partai-16 div,.partai-counter-bar.partai-16 div::before{background: #244282;}
+.partai-counter-bar.partai-17 div,.partai-counter-bar.partai-17 div::before{background: #50b33f;}
+.partai-counter-bar.partai-18 div,.partai-counter-bar.partai-18 div::before{background: #000;}
+
+.qc-nav{
+    width: 100%;
+    float: left;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.qc-nav a{
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: #777;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    background: rgba(255,255,255,0);
+    transition: all ease-out 0.3s;
+    -moz-transition: all ease-out 0.3s;
+    -webkit-transition: all ease-out 0.3s;
+}
+.qc-nav a.active,
+.qc-nav a:hover{
+    color: #fff;
+    background: #00bceb;
+}
+
+.qc-note{
+    margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 1024px){
