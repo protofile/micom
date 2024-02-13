@@ -3767,7 +3767,7 @@ section.photo .container{
     padding-right: 20px;
 }
 .quick-count-mi.detail-page .container{
-    background: #f4f4f4;
+    background: none;
     padding-left: 20px;
 }
 .qc-title{
@@ -3924,9 +3924,14 @@ section.photo .container{
     float: left;
     margin-bottom: 30px;
     display: none;
+    position: relative;
 }
 .qc-tab-ct.show{
     display: block;
+}
+.qc-counter-wrap{
+    width: 100%;
+    float: left;
 }
 .partai-counter{
     width: calc(100% / 18);
@@ -4025,16 +4030,28 @@ section.photo .container{
     margin-bottom: 30px;
 }
 
+
 @media only screen and (max-width: 1024px){
     .quick-count-mi .container{
         padding-right: 0;
+        padding-left: 0;
     }
     .quick-count-mi .columns{
         display: block;
+        width: 100%;
+        float: left;
     }
     .quick-count-mi .column{
         width: 100%;
         float: left;
+    }
+    .quick-count-mi .column .columns{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .quick-count-mi .column .columns .column{
+        padding-left: 0;
+        padding-right: 0;
     }
     .qc-title{
         padding-top: 20px;
@@ -4069,7 +4086,44 @@ section.photo .container{
         height: 56px;
         left: 0.75rem;
     }
-    
+    .quick-count-mi.detail-page .column.is-4{
+        width: 33%;
+    }
+    .quick-count-mi.detail-page .column.is-4 .counter-bar-2.bigger{
+        border-radius: 0;
+    }
+    .quick-count-mi.detail-page .column.is-4:first-child .counter-bar-2.bigger{
+        border-radius: 8px 0 0 8px;
+    }
+    .quick-count-mi.detail-page .column.is-4:last-child .counter-bar-2.bigger{
+        border-radius: 0 8px 8px 0;
+    }
+
+    .qc-tab-ct{
+        height: 600px;
+    }
+    .qc-counter-wrap{
+        transform: translate(-50%,-50%) rotate(90deg);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 600px;
+        height: 100vw;
+    }
+    .partai-counter{
+        width: 32px;
+    }
+    .partai-counter-bar{
+        height: calc(100vw - 80px);
+    }
+    .partai-counter .logo-partai,
+    .partai-counter-bar div span{
+        transform: rotate(-90deg);
+        transform-origin: center center;
+    }
+    .partai-counter-bar div span{
+        top: -24px;
+    }
 }
 @media only screen and (max-width: 375px){
     .paslon{
