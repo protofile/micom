@@ -4034,6 +4034,16 @@ section.photo .container{
     text-align: right;
     font-weight: 700;
 }
+.qc-tab-ct p{
+    float: left;
+    font-size: 14px;
+    color: #fff;
+    background: #34347C;
+    padding: 5px 20px;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
 
 @media only screen and (max-width: 1024px){
     .quick-count-mi .container{
@@ -4143,6 +4153,13 @@ section.photo .container{
     }
     .counter-bar-2{
         margin-bottom: 20px;
+    }
+    .qc-nav{
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+    .qc-tab-ct p{
+        margin-top: 600px;
     }
 }
 @media only screen and (max-width: 375px){
