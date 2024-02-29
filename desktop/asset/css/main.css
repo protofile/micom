@@ -4302,6 +4302,19 @@ section.imsak .text p {
     z-index: -1;
     top: 0;
 }
+.widget-ramadan .ti::after{
+    content: "";
+    width: 204px;
+    height: 6px;
+    position: absolute;
+    top: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    background: url(../images/imsakiyah/pseudo-widget-ramadan.png) no-repeat center;
+    background-size: contain;
+}
 .widget-ramadan .list-4{
     position: relative;
     z-index: 4;
