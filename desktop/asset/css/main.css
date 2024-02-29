@@ -923,79 +923,10 @@ a.bt.bt-grey:hover{
     padding-right: 20px;
     width: calc(33.33333% - 12px);
 }
-.imsak{
-    margin: 20px 0;
-}
 
-.imsak .contentimsak{
-    background: url('../images/bank/bg-imsak.png') no-repeat center;
-    background-size: cover;
-    margin: 0 0;
-    height: 250px;
-    width: 100%;
-}
-.imsak .column{
-    margin: 10px 0;
-}
-.imsak .content1{
-    margin-left: 20px;
-}
-.imsak .content2{
-    padding-top: 20px;
-}
-.imsak .content2 .columns{
-    justify-content: end;
-}
-.imsak .content2 .column.is-2{
-    background-image: url('../images/bank/frameImsak.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-bottom: 20px;
-    width: 108px;
-}
-.imsak .content2 .column.is-2 .text {
-    text-align: center;
-    padding-top: 10px;
-    margin-bottom: 20px;
-    padding-top: 30px;
-}
-.imsak .content1 .text .title {
-    display: flex;
-    margin-bottom: 0;
-    margin-top: 10px;
-}
-.imsak .content1 .text .title h3 {
-    color: #ffff;
-    margin-left: 10px;
-}
-.imsak .content2 .column.is-2 .text h3{
-    font-size: 25px;
-}
-.imsak .content2 .column.is-2 .text h5{
-    font-size: 10px;
-}
-.imsak .content2 .columns{
-    padding: 0 40px;
-    margin-left: 55px;
-}
-section.imsak .text h2 {
-    font-size: 50px; 
-    font-weight: 1000;
-}
-
-section.imsak .text h3 {
-    font-size: 18px;
-}
-
-section.imsak .text p {
-    font-size: 14px; 
-}
-
-.imsak .column.is-4,
 .detail .column.is-4{
     padding-left: 20px;
     padding-right: 20px;
-    width: calc(33.33333% 0);
 }
 
 .list-3{
@@ -4265,3 +4196,137 @@ section.photo .container{
     }
 }
 /*QUICK COUNT*/
+
+/*RAMADAN*/
+.imsak{
+    margin: 20px 0;
+}
+
+.imsak .contentimsak{
+    background: url('../images/imsakiyah/bg-imsak.png') no-repeat center;
+    background-size: cover;
+    margin: 0 0;
+    height: 250px;
+    width: 100%;
+}
+.imsak .column{
+    margin: 10px 0;
+}
+.imsak .content1{
+    margin-left: 20px;
+}
+.imsak .content2{
+    padding-top: 20px;
+    padding-right: 30px;
+}
+.imsak .content2 .columns{
+    justify-content: end;
+}
+.imsak .content2 .column.is-2{
+    background-image: url('../images/imsakiyah/frameImsak.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 20px;
+    width: 108px;
+}
+.imsak .content2 .column.is-2 .text {
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+}
+.imsak .content1 .text .title {
+    display: flex;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.imsak .content1 .text .title h3 {
+    color: #ffff;
+    margin-left: 10px;
+}
+.imsak .content2 .column.is-2 .text h3{
+    font-size: 25px;
+}
+.imsak .content2 .column.is-2 .text h5{
+    font-size: 10px;
+}
+.imsak .content2 .columns{
+    padding: 0 40px;
+    margin-left: 55px;
+}
+section.imsak .text h2 {
+    font-size: 50px; 
+    font-weight: 1000;
+}
+
+section.imsak .text h3 {
+    font-size: 18px;
+}
+
+section.imsak .text p {
+    font-size: 14px; 
+}
+.imsak .column.is-4,
+.detail .column.is-4{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.content2 .has-text-right{
+    margin-right: 0 !important;
+}
+.content2 .has-text-right a{
+    font-size: 14px;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+}
+
+.widget-ramadan{
+    background: url(../images/imsakiyah/bg-widget-ramadan.png);
+    border-bottom: 3px solid #F4B000;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    padding-bottom: 30px;
+}
+.widget-ramadan .ti{
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 3;
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+.widget-ramadan .ti::before{
+    width: 100%;
+    height: 100px;
+    background: url(../images/imsakiyah/bg-title-widget-ramadan.jpg);
+    z-index: -1;
+    top: 0;
+}
+.widget-ramadan .list-4{
+    position: relative;
+    z-index: 4;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.widget-ramadan .list-4 li{
+    margin-bottom: 10px;
+    background: #fff;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    padding: 10px;
+}
+.widget-ramadan .list-4 .pic{
+    width: 75px;
+}
+.widget-ramadan .list-4 .text{
+    width: calc(100% - 75px);
+}
+.widget-ramadan .list-4 li img{
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+
+/*RAMADAN*/
