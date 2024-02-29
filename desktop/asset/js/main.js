@@ -46,4 +46,27 @@ $(document).ready(function(){
         $(".bottom-ads").toggleClass("hide");
         $(this).children(".fa").toggleClass("fa-angle-up fa-angle-down");
     });
+
+    /*TTS*/
+    $(".peringkat .more-bt").click(function(pmb){
+        pmb.preventDefault();
+        $($(this).attr("href")).addClass("show");
+    });
+    $(".tts-popup .close-bt").click(function(){
+        $(".overlay").removeClass("show");
+    });
+    $(".peringkat-tab-nav a").click(function(pta){
+        pta.preventDefault();
+        $(".peringkat-tab-nav a").removeClass("active");
+        $(this).addClass("active");
+        $(".peringkat-tab-ct").removeClass("show");
+        $($(this).attr("href")).addClass("show");
+    });
+    $(".tts-popup-tab-nav a").click(function(pta){
+        pta.preventDefault();
+        $(".tts-popup-tab-nav a").removeClass("active");
+        $(this).addClass("active");
+        $(".tts-pop-tab-ct").removeClass("show");
+        $($(this).attr("href")).addClass("show");
+    });
 });
