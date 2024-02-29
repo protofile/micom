@@ -700,7 +700,7 @@ a.bt.bt-grey:hover{
 
 .newsticker{
     height: 80px;
-    background: #982323;
+    background: #34347C;
     padding: 16px 0;
 }
 .newsticker .title{
@@ -924,12 +924,12 @@ a.bt.bt-grey:hover{
     width: calc(33.33333% - 12px);
 }
 .imsak{
-    padding-top: 12px 0;
-    margin-top: 15px;
+    margin: 20px 0;
 }
 
 .imsak .contentimsak{
-    background-image: url('../images/bank/bg-imsak.png');
+    background: url('../images/bank/bg-imsak.png') no-repeat center;
+    background-size: cover;
     margin: 0 0;
     height: 250px;
     width: 100%;
@@ -942,6 +942,9 @@ a.bt.bt-grey:hover{
 }
 .imsak .content2{
     padding-top: 20px;
+}
+.imsak .content2 .columns{
+    justify-content: end;
 }
 .imsak .content2 .column.is-2{
     background-image: url('../images/bank/frameImsak.png');
