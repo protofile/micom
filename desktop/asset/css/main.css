@@ -783,6 +783,9 @@ a.bt.bt-grey:hover{
 .mid-ct section{
     margin-bottom: 40px;
 }
+.imsak section{
+    margin-bottom: 40px;
+}
 
 .list-1,
 .list-2,
@@ -919,6 +922,77 @@ a.bt.bt-grey:hover{
     padding-left: 20px;
     padding-right: 20px;
     width: calc(33.33333% - 12px);
+}
+.imsak{
+    padding-top: 12px 0;
+    margin-top: 15px;
+}
+
+.imsak .contentimsak{
+    background-image: url('../images/bank/bg-imsak.png');
+    margin: 0 0;
+    height: 250px;
+    width: 100%;
+}
+.imsak .column{
+    margin: 10px 0;
+}
+.imsak .content1{
+    margin-left: 20px;
+}
+.imsak .content2{
+    padding-top: 20px;
+}
+.imsak .content2 .column.is-2{
+    background-image: url('../images/bank/frameImsak.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 20px;
+    width: 108px;
+}
+.imsak .content2 .column.is-2 .text {
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+}
+.imsak .content1 .text .title {
+    display: flex;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.imsak .content1 .text .title h3 {
+    color: #ffff;
+    margin-left: 10px;
+}
+.imsak .content2 .column.is-2 .text h3{
+    font-size: 25px;
+}
+.imsak .content2 .column.is-2 .text h5{
+    font-size: 10px;
+}
+.imsak .content2 .columns{
+    padding: 0 40px;
+    margin-left: 55px;
+}
+section.imsak .text h2 {
+    font-size: 50px; 
+    font-weight: 1000;
+}
+
+section.imsak .text h3 {
+    font-size: 18px;
+}
+
+section.imsak .text p {
+    font-size: 14px; 
+}
+
+.imsak .column.is-4,
+.detail .column.is-4{
+    padding-left: 20px;
+    padding-right: 20px;
+    width: calc(33.33333% 0);
 }
 
 .list-3{
@@ -3682,6 +3756,7 @@ section.photo .container{
 }
 
 @media only screen and (max-width: 1600px){
+    .imsak .container,
     .mid-ct .container,
     .headline .container,
     .newsticker .container,

@@ -669,6 +669,7 @@ section{
     color: #fff;
 }
 
+
 .newsticker{
     background: #982323;
     padding: 16px 0;
@@ -748,10 +749,6 @@ section{
     position: absolute;
     left: 0;
     bottom: -1px;
-}
-
-.mid-ct section{
-    margin-bottom: 40px;
 }
 
 .list-1,
@@ -855,9 +852,9 @@ section{
 .mid-ct .column{
     padding-top: 30px;
 }
-
-
-
+.mid-ct section{
+    margin-bottom: 40px;
+}
 .list-3 li{
     width: 100%;
     float: left;
