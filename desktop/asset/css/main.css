@@ -4120,6 +4120,13 @@ section.photo .container{
     text-align: center;
 }
 
+.text-footer img{
+    height: 30px;
+    object-fit: contain;
+    margin-bottom: -10px;
+    margin-right: 20px;
+}
+
 @media only screen and (max-width: 1024px){
     .quick-count-mi .container{
         padding-right: 0;
