@@ -3012,3 +3012,27 @@ section.imsak .text p {
 }
 /*RAMADAN*/
 
+/*KANAL WANITA*/
+.master.mode-2 .newsticker{
+    background-image: linear-gradient(
+        45deg,
+        hsl(308deg 62% 52%) 0%,
+        hsl(321deg 76% 57%) 11%,
+        hsl(332deg 87% 62%) 22%,
+        hsl(341deg 95% 67%) 33%,
+        hsl(351deg 99% 71%) 44%,
+        hsl(2deg 99% 74%) 56%,
+        hsl(11deg 96% 73%) 67%,
+        hsl(18deg 90% 72%) 78%,
+        hsl(25deg 83% 72%) 89%,
+        hsl(31deg 75% 74%) 100%
+    );
+}
+.master.mode-2 .ti::before{
+    background: #d13abd;
+}
+.master.mode-2 .mid-ct .column.is-4, 
+.master.mode-2 .detail .column.is-4{
+    background: #F7EDF6;
+}
+/*KANAL WANITA*/
