@@ -4653,3 +4653,92 @@ section.imsak .text p {
     background: #F7EDF6;
 }
 /*KANAL WANITA*/
+
+/*DETAIL IMSAKIYAH*/
+.sub-nav-imsakiyah{
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-top: 20px;
+}
+.sub-nav-imsakiyah a{
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+    display: inline-block;
+    padding: 6px 15px 7px;
+    transition: all ease-out 0.3s;
+    -moz-transition: all ease-out 0.3s;
+    -webkit-transition: all ease-out 0.3s;
+    background: rgba(255,255,255,0);
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+.sub-nav-imsakiyah a:hover{
+    color: #fff;
+}
+.sub-nav-imsakiyah a.active{
+    background: #00B4CC;
+}
+.main-imsakiyah{
+    padding: 40px 0;
+}
+.responsive-table{
+    width: 100%;
+    float: left;
+}
+.responsive-table th{
+    font-weight: 700;
+    padding: 10px 20px;
+    background: #014224;
+    color: #fff;
+    text-align: center;
+}
+.responsive-table th:nth-child(1),
+.responsive-table th:nth-child(2){
+    text-align: left;
+}
+.responsive-table th:nth-child(1){
+    width: 80px;
+}
+.responsive-table td{
+    padding: 5px 20px;
+}
+.responsive-table tr:nth-child(odd) td{
+    background: #efefef;
+}
+.responsive-table td span{
+    display: none;
+}
+.responsive-table td:first-child{
+    font-weight: 700;
+}
+@media only screen and (max-width: 768px){
+    .main-imsakiyah{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .responsive-table th{
+        display: none;
+    }
+    .responsive-table td{
+        display: block;
+        text-align: right !important;
+        border-bottom: 1px solid #efefef;
+    }
+    .responsive-table td span{
+        display: block;
+        width: 40%;
+        float: left;
+        text-align: left;
+        position: relative;
+        font-weight: 700;
+    }
+    .responsive-table td:first-child{
+        border-top: 5px solid #dedede;
+    }
+    .responsive-table td:last-child{
+        border-bottom: 5px solid #dedede;
+    }
+}
+/*DETAIL IMSAKIYAH*/
