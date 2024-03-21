@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Indonesia</title>
+
+    <link rel="stylesheet" href="asset/css/normalize.css">
+    <link rel="stylesheet" href="asset/css/bulma.min.css">
+    <link rel="stylesheet" href="asset/css/fontawesome-all.css">
+    <link rel="stylesheet" href="asset/css/owl.carousel.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/main.css">
+</head>
+<body>
+    
+    <div class="master">
+
+        <div class="account-page">
+            <form action="" class="tts-form">
+                <div class="inp-group">
+                    <h3>Register</h3>
+                </div>
+                <div class="inp-group">
+                    <label for="">Nama Lengkap</label>
+                    <input type="text" placeholder="Nama Lengkap">
+                </div>
+                <div class="inp-group">
+                    <label for="">Email</label>
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="inp-group">
+                    <label for="">No. Telepon</label>
+                    <input type="text" placeholder="No. Telepon">
+                </div>
+                <div class="inp-group">
+                    <label for="">Alamat</label>
+                    <textarea name="" id="" cols="30" rows="5"></textarea>
+                </div>
+                <div class="inp-group">
+                    <label for="">Password</label>
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="inp-group">
+                    <label for="">Foto Profil</label>
+                    <input type="file">
+                </div>
+                <div class="inp-group has-text-right">
+                    <a href="#">Lupa password?</a>
+                </div>
+                <div class="inp-group">
+                    <button>LOGIN</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="asset/js/jquery-1.11.0.min.js"></script>
+    <script src="asset/js/owl.carousel.min.js"></script>
+    <script src="asset/js/sticky.js"></script>
+    <script src="asset/js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            var sticky = new Sticky('[data-sticky]');
+            $(".newsticker-slider").owlCarousel({
+                singleItem: true,
+                navigation: true,
+                pagination: false,
+                autoPlay: true
+            });
+
+            var afs=14;
+            var ipos= -100;
+            $(".article").css("font-size", afs + "px");
+            $(".font-size-bt-group .indicator").css("left", ipos + "%");
+            $(".bt-min").click(function(){
+                if(afs>14){
+                    afs --;
+                    ipos = ipos-25;
+                    $(".article").css("font-size", afs + "px");
+                    $(".font-size-bt-group .indicator").css("left", ipos + "%");
+                    console.log(ipos);
+                }else{
+                    //do nothing
+                }
+            });
+            $(".bt-plus").click(function(){
+                if(afs<18){
+                    afs ++;
+                    ipos = ipos+25;
+                    $(".article").css("font-size", afs + "px");
+                    $(".font-size-bt-group .indicator").css("left", ipos + "%");
+                    console.log(ipos);
+                }else{
+                    //do nothing
+                }
+            });
+
+
+        });
+    </script>
+</body>
+</html>
