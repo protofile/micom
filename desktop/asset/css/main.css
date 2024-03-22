@@ -4879,4 +4879,9 @@ section.imsak .text p {
     font-weight: 700;
     margin-bottom: 20px;
 }
+.tts-form .inp-group p{
+    width: 100%;
+    font-size: 14px;
+    margin-top: 20px;
+}
 /*TTS ACCOUNT*/
