@@ -1577,7 +1577,6 @@ section.photo .container{
     float: left;
     margin-bottom: 20px;
     height: 200px;
-    overflow: hidden;
 }
 .m-headline .item:first-child{
     width: calc(100% + 30px);
@@ -1586,9 +1585,13 @@ section.photo .container{
 }
 .m-headline figure{
     width: 100%;
-    height: 360px;
+    height: 200px;
+    overflow: hidden;
     float: left;
     margin-bottom: 0;
+}
+.m-headline .item:first-child figure {
+    height: 360px;
 }
 .m-headline figure img{
     width: 100%;
@@ -3084,3 +3087,87 @@ section.imsak .text p {
     margin-bottom: 16px;
 }
 /*ARTICLE STYLE*/
+
+/*KONTEN PREMIUM*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.mob-nav li.premium a img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 16px;
+}
+.m-headline .item_premium::before,
+.badge-premium {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    content: 'PREMIUM';
+    background-image: url('../images/premium/bg_badge.png');
+    background-repeat: no-repeat;
+    background-size: 100px;
+    color: #724A08;
+    z-index: 3;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    padding-top: 2px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 14px;
+}
+.m-headline .item_premium::before {
+    top: -8px;
+    width: 130px;
+    height: 36px;
+    background-size: 130px;
+    padding-top: 4px;
+    font-size: 16px;
+}
+.mi-premium {
+    padding-top: 12px;
+    padding-bottom: 30px;
+    position: relative;
+}
+.mi-premium::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 70px;
+    height: 100%;
+    background-color: #f4f4f4;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.mi-premium_item {
+    display: flex;
+    column-gap: 15px;
+}
+
+.mi-premium_item figure a {
+    position: relative;
+    display: block;
+}
+
+.mi-premium_item figure a img {
+    max-width: 150px;
+    vertical-align: middle;
+}
+
+.mi-premium_item h3 a {
+    color: #333333;
+    font-weight: 700;
+    font-size: 16px;
+    display: block;
+}
+
+.mi-premium_item h3 a:hover {
+    color: #982323;
+}
+/*KONTEN PREMIUM*/
