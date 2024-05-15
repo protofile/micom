@@ -5949,10 +5949,12 @@ section.imsak .text p {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
     border-radius: 0;
+    border-bottom: 1px solid transparent;
 }
 .accordions .accordion.is-active .accordion-header {
     background-color: #FFFFFF;
     color: #333333;
+    border-color: #cccccc;
 }
 .accordions .accordion .accordion-header .toggle {
     margin: 0;
