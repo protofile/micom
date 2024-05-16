@@ -3096,14 +3096,9 @@ section.imsak .text p {
     clear: both;
     display: table;
 }
-.mob-nav li.premium a img {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 5px;
-    width: 16px;
-}
-.m-headline .item_premium::before,
-.badge-premium {
+
+.m-headline .item.item_premium figure::after,
+.mi-premium_item figure::after {
     position: absolute;
     top: -5px;
     left: 0;
@@ -3120,13 +3115,16 @@ section.imsak .text p {
     font-family: "Bebas Neue", sans-serif;
     font-size: 14px;
 }
-.m-headline .item_premium::before {
-    top: -8px;
+.m-headline .item.item_premium figure::after {
+    top: -7px;
     width: 130px;
     height: 36px;
     background-size: 130px;
     padding-top: 4px;
     font-size: 16px;
+}
+.wrapper-detail .m-headline .item.item.item_premium:first-child {
+    margin-top: 7px;
 }
 .mi-premium {
     padding: 30px 20px;
@@ -3151,6 +3149,9 @@ section.imsak .text p {
 .mi-premium_item {
     display: flex;
     column-gap: 15px;
+}
+.mi-premium_item figure {
+    position: relative;
 }
 
 .mi-premium_item figure a {
@@ -3333,12 +3334,6 @@ section.imsak .text p {
     margin-left: auto;
 }
 
-.ti-premium .ti-icon {
-    display: inline-flex;
-    margin-right: 10px;
-    width: 22px;
-}
-
 .premium-payment,
 .premium-faq {
     color: #000000;
@@ -3498,24 +3493,6 @@ section.imsak .text p {
     width: 80px;
     vertical-align: middle;
 }
-.breadcrumb-premium {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    color: #FFCE29;
-    font-size: 14px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-}
-.breadcrumb-premium img {
-    display: inline-block;
-    vertical-align: middle;
-    width: 22px !important;
-    margin-right: 5px;
-}
 
 .pagination-premium ul {
     margin-top: 28px;
@@ -3582,9 +3559,20 @@ section.imsak .text p {
     margin-top: 28px;
 }
 
-@media (min-width: 567px) {
+@media (min-width: 567px) and (max-width: 767.9px) {
     .wrapper-detail {
-        margin-top: 100px;
+        margin-top: 130px;
     }
 }
+@media (min-width: 768px) and (max-width: 1024.9px) {
+    .wrapper-detail {
+        margin-top: 170px;
+    }
+}
+@media (min-width: 1025px) {
+    .wrapper-detail {
+        margin-top: 190px;
+    }
+}
+
 /*KONTEN PREMIUM*/
