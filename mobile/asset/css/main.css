@@ -3097,7 +3097,7 @@ section.imsak .text p {
     display: table;
 }
 
-.m-headline .item.item_premium figure::after,
+.item_premium figure::after,
 .mi-premium_item figure::after {
     position: absolute;
     top: -5px;
@@ -3150,6 +3150,7 @@ section.imsak .text p {
     display: flex;
     column-gap: 15px;
 }
+.item_premium figure,
 .mi-premium_item figure {
     position: relative;
 }

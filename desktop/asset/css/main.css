@@ -5628,14 +5628,11 @@ section.imsak .text p {
     display: table;
 }
 
-.headline-grid .item.item_premium {
-    position: relative;
-}
 .headline-grid .item.item_premium:first-child {
     position: absolute;
 }
 
-.headline-grid .item.item_premium figure::after,
+.item_premium figure::after,
 .mi-premium_item figure::after {
     position: absolute;
     top: -7px;
@@ -5684,6 +5681,7 @@ section.imsak .text p {
     row-gap: 12px;
 }
 
+.item_premium figure,
 .mi-premium_item figure {
     position: relative;
 }
