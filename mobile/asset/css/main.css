@@ -3150,7 +3150,10 @@ section.imsak .text p {
     display: flex;
     column-gap: 15px;
 }
-.item_premium figure,
+.item_premium figure {
+    position: relative;
+    overflow: unset;
+}
 .mi-premium_item figure {
     position: relative;
 }
