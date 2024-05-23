@@ -5640,6 +5640,7 @@ section.imsak .text p {
     content: 'PREMIUM';
     background-image: url('../images/premium/bg_badge.png');
     background-size: 130px;
+    background-repeat: no-repeat;
     color: #724A08;
     z-index: 3;
     width: 130px;
@@ -5680,7 +5681,6 @@ section.imsak .text p {
     flex-direction: column;
     row-gap: 12px;
 }
-
 .item_premium figure,
 .mi-premium_item figure {
     position: relative;
@@ -6140,3 +6140,36 @@ section.imsak .text p {
 }
 
 /*KONTEN PREMIUM*/
+
+/*BREAKING NEWS TAG*/
+.item_redtags .text {
+    position: relative;
+    padding-top: 40px;
+}
+.headline .item_redtags .text {
+    padding-top: 50px;
+    position: absolute;
+}
+.item_redtags .text::before {
+    background-image: url('../images/badge_red.png');
+    background-size: 130px;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: 'Breaking News';
+    z-index: 3;
+    width: 130px;
+    height: 31px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.list-8 .item_redtags .text::before {
+    left: 10px;
+}
+/*BREAKING NEWS TAG*/
