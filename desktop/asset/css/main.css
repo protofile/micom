@@ -6142,15 +6142,15 @@ section.imsak .text p {
 /*KONTEN PREMIUM*/
 
 /*BREAKING NEWS TAG*/
-.item_redtags .text {
+.item_breaking-news .text {
     position: relative;
     padding-top: 40px;
 }
-.headline .item_redtags .text {
+.headline .item_breaking-news .text {
     padding-top: 50px;
     position: absolute;
 }
-.item_redtags .text::before {
+.item_breaking-news .text::before {
     background-image: url('../images/badge_red.png');
     background-size: 130px;
     background-repeat: no-repeat;
@@ -6169,7 +6169,16 @@ section.imsak .text p {
     align-items: center;
     padding-left: 20px;
 }
-.list-8 .item_redtags .text::before {
+.list-8 .item_breaking-news .text::before,
+.list-4 .item_breaking-news .text::before {
     left: 10px;
+    background-size: 100px;
+    width: 100px;
+    height: 23px;
+    padding-left: 5px;
+}
+.list-8 .item_breaking-news .text,
+.list-4 .item_breaking-news .text {
+    padding-top: 33px;
 }
 /*BREAKING NEWS TAG*/
