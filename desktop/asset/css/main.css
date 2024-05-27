@@ -1140,6 +1140,16 @@ section {
     -webkit-transform: translateY(0);
 }
 
+.list-3 li.item_breaking-news:first-child .text,
+.list-3 li.item_breaking-news:nth-child(6n) .text,
+.list-3 li.item_breaking-news:nth-child(6n + 1) .text {
+    float: left;
+    padding-top: 40px;
+}
+.list-3 li.item_breaking-news:first-child .text::before{
+    left: 20px;
+}
+
 .list-3 li:nth-child(3) {
     height: 360px;
     background: #212121;
