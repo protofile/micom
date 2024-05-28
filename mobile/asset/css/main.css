@@ -3097,35 +3097,59 @@ section.imsak .text p {
     display: table;
 }
 
-.item_premium figure::after,
-.mi-premium_item figure::after {
-    position: absolute;
-    top: -5px;
-    left: 0;
-    content: 'PREMIUM';
-    background-image: url('../images/premium/bg_badge.png');
+.headline .item_premium h2,
+.item_premium h3 {
+    position: relative;
+    line-height: 1.3em;
+}
+.headline .item_premium h2::before,
+.item_premium h3::before {
+    background-image: url(../images/premium/bg_badge.png);
     background-repeat: no-repeat;
-    background-size: 100px;
-    color: #724A08;
-    z-index: 3;
-    width: 100px;
-    height: 30px;
-    text-align: center;
-    padding-top: 2px;
-    font-family: "Bebas Neue", sans-serif;
+    display: inline-flex;
+    line-height: 100%;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    color: #FFFFFF;
+    font-weight: 800;
+    content: 'Premium';
+    text-transform: uppercase;
+    margin-right: 8px;
+}
+.headline .item_premium h2::before {
     font-size: 14px;
+    background-size: 126px;
+    width: 126px;
+    height: 26px;
+    transform: translateY(-3px);
+    padding-left: 28px;
 }
-.m-headline .item.item_premium figure::after {
-    top: -7px;
-    width: 130px;
-    height: 36px;
-    background-size: 130px;
-    padding-top: 4px;
-    font-size: 16px;
+.item_premium h3::before {
+    font-size: 12px;
+    background-size: 100px;
+    width: 100px;
+    height: 21px;
+    transform: translateY(-1px);
+    padding-left: 24px;
 }
-.wrapper-detail .m-headline .item.item.item_premium:first-child {
-    margin-top: 7px;
+.headline .item_premium h2::after,
+.item_premium h3::after {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    content: "";
+    background-image: url('../images/premium/vip-crown.png');
+    background-size: 12px;
 }
+.headline .item_premium h2::after {
+    top: 3px;
+    left: 8px;
+}
+.item_premium h3::after {
+    top: 4px;
+    left: 6px;
+}
+
 .mi-premium {
     padding: 30px 20px;
     position: relative;
@@ -3150,31 +3174,22 @@ section.imsak .text p {
     display: flex;
     column-gap: 15px;
 }
-.item_premium figure {
-    position: relative;
-    overflow: unset;
-}
 .mi-premium_item figure {
     position: relative;
 }
-
 .mi-premium_item figure a {
     position: relative;
     display: block;
 }
-
 .mi-premium_item figure a img {
     max-width: 150px;
     vertical-align: middle;
 }
-
 .mi-premium_item h3 a {
     color: #333333;
     font-weight: 700;
     font-size: 14px;
-    display: block;
 }
-
 .mi-premium_item h3 a:hover {
     color: #982323;
 }
@@ -3197,24 +3212,7 @@ section.imsak .text p {
     padding: 40px 20px 20px 20px;
     background-color: #ffffff;
     margin-top: -50px;
-}
-.premium-article::before {
-    position: absolute;
-    top: -9px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    content: 'PREMIUM';
-    background-image: url('../images/premium/bg_badge.png');
-    background-size: 144px;
-    color: #724A08;
-    z-index: 3;
-    width: 144px;
-    height: 43px;
-    text-align: center;
-    padding-top: 3px;
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 20px;
+    position: relative;
 }
 .premium-article::after {
     background: linear-gradient(180deg, rgba(244, 244, 244, 0) 0%, #F4F4F4 100%);
@@ -3226,6 +3224,29 @@ section.imsak .text p {
     right: 0;
 }
 
+.detail-premium .premium-article .tag-premium {
+    background-image: url(../images/premium/bg_badge.png);
+    background-repeat: no-repeat;
+    background-size: 120px;
+    width: 120px;
+    height: 25px;
+    display: inline-flex;
+    line-height: 100%;
+    align-items: center;
+    color: #FFFFFF;
+    font-weight: 800;
+    content: 'Premium';
+    text-transform: uppercase;
+    margin: 0;
+    padding-left: 8px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+.detail-premium .premium-article .tag-premium img {
+    width: 16px;
+    margin-right: 5px;
+}
 .detail-premium .premium-article h1 {
     font-weight: 700;
     font-size: 24px;
@@ -3582,49 +3603,63 @@ section.imsak .text p {
 /*KONTEN PREMIUM*/
 
 /*BREAKING NEWS TAG*/
-.item_breaking-news .text {
+.headline .item_breaking-news h2,
+.item_breaking-news h3 {
     position: relative;
-    padding-top: 33px;
+    line-height: 1.3em;
 }
-.headline .item_breaking-news .text {
-    padding-top: 41px;
-    position: absolute;
-}
-.item_breaking-news .text::before {
-    background-image: url('../images/badge_red.png');
-    background-size: 110px;
+.headline .item_breaking-news h2::before,
+.item_breaking-news h3::before {
+    background-image: url(../images/badge_red.png);
     background-repeat: no-repeat;
-    color: #FFFFFF;
-    font-family: 'Lato', sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: 'Breaking News';
-    z-index: 3;
-    width: 110px;
-    height: 26px;
-    display: flex;
+    display: inline-flex;
+    line-height: 100%;
     align-items: center;
-    padding-left: 12px;
+    font-family: 'Lato', sans-serif;
+    color: #FFFFFF;
+    font-weight: 800;
+    content: 'Breaking News';
+    text-transform: uppercase;
+    margin-right: 8px;
+    transform: translateY(-2px);
 }
-.list-8 .item_breaking-news .text::before,
-.list-4 .item_breaking-news .text::before {
-    background-size: 90px;
-    width: 95px;
+.headline .item_breaking-news h2::before {
+    justify-content: center;
+    font-size: 14px;
+    background-size: 149px;
+    width: 149px;
+    height: 24px;
+}
+.item_breaking-news h3::before {
+    font-size: 12px;
+    background-size: 129px;
+    width: 129px;
     height: 21px;
-    padding-left: 5px;
-    font-size: 11px;
+    padding-left: 18px;
 }
-.list-8 .item_breaking-news .text::before {
-    left: 10px;
+.headline .item_breaking-news h2::after,
+.item_breaking-news h3::after {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    content: "";
+    border-radius: 50%;
+    background-color: #F2CB44;
+    left: 5px;
 }
-.list-4 .item_breaking-news .text::before {
-    left: 20px;
+.headline .item_breaking-news h2::after {
+    top: 7px;
 }
-.list-8 .item_breaking-news .text,
-.list-4 .item_breaking-news .text {
-    padding-top: 26px;
+.item_breaking-news h3::after {
+    top: 6px;
+}
+.list-8 .item_breaking-news h3::before,
+.list-4 .item_breaking-news h3::before {
+    margin-bottom: 5px;
+    transform: translateY(0px);
+}
+.list-8 .item_breaking-news h3::after,
+.list-4 .item_breaking-news h3::after {
+    top: 6px;
 }
 /*BREAKING NEWS TAG*/
