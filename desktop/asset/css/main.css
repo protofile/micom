@@ -6215,7 +6215,7 @@ section.imsak .text p {
     border-radius: 50%;
     background-color: #F2CB44;
     left: 6px;
-    animation: blink 5s infinite;
+    animation: blink 1s infinite;
 }
 .headline .item_breaking-news h2::after {
     width: 11px;
@@ -6242,7 +6242,6 @@ section.imsak .text p {
     100% {opacity: 1;}
 }
 .list-3 li.item_breaking-news:first-child .text,
-.list-3 li.item_breaking-news:nth-child(6n) .text,
 .list-3 li.item_breaking-news:nth-child(6n + 1) .text {
     float: left;
     padding-top: 40px;
@@ -6252,5 +6251,8 @@ section.imsak .text p {
 }
 .list-3 li:first-child .text h3::after {
     top: 5px;
+}
+.list-3 li.item_breaking-news:nth-child(6n) .text {
+    float: left;
 }
 /*BREAKING NEWS TAG*/
