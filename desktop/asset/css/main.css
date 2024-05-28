@@ -6250,4 +6250,7 @@ section.imsak .text p {
 .list-3 li.item_breaking-news:first-child .text::before{
     left: 20px;
 }
+.list-3 li:first-child .text h3::after {
+    top: 5px;
+}
 /*BREAKING NEWS TAG*/
