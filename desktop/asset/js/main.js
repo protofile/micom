@@ -47,6 +47,10 @@ $(document).ready(function(){
         $(this).children(".fa").toggleClass("fa-angle-up fa-angle-down");
     });
 
+    setTimeout(function(){
+        $(".otp-ads").removeClass("show");
+    },5000);
+
     /*TTS*/
     $(".peringkat .more-bt").click(function(pmb){
         pmb.preventDefault();
