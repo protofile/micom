@@ -1113,8 +1113,8 @@ section {
 }
 
 .list-3 li:first-child .pic,
-.list-3 li:nth-child(6n) .pic,
-.list-3 li:nth-child(6n + 1) .pic {
+.list-3.with-variation-item li:nth-child(6n) .pic,
+.list-3.with-variation-item li:nth-child(6n + 1) .pic {
   width: 100%;
   margin-bottom: 15px;
 }
@@ -1132,8 +1132,8 @@ section {
 }
 
 .list-3 li:first-child .text,
-.list-3 li:nth-child(6n) .text,
-.list-3 li:nth-child(6n + 1) .text {
+.list-3.with-variation-item li:nth-child(6n) .text,
+.list-3.with-variation-item li:nth-child(6n + 1) .text {
   width: 100%;
   position: relative;
   top: auto;
@@ -1148,24 +1148,24 @@ section {
   background: #212121;
 }
 
-.list-3 li:nth-child(6n),
-.list-3 li:nth-child(6n + 1) {
+.list-3.with-variation-item li:nth-child(6n),
+.list-3.with-variation-item li:nth-child(6n + 1) {
   width: calc((100% - 20px) / 2);
   margin-right: 20px;
   padding: 0 0 20px;
 }
 
-.list-3 li:nth-child(6n) .pic figure,
-.list-3 li:nth-child(6n + 1) .pic figure {
+.list-3.with-variation-item li:nth-child(6n) .pic figure,
+.list-3.with-variation-item li:nth-child(6n + 1) .pic figure {
   padding-top: 48%;
 }
 
-.list-3 li:nth-child(6n + 1) {
+.list-3.with-variation-item li:nth-child(6n + 1) {
   margin-right: 0;
 }
 
-.list-3 li:nth-child(6n) .text h3,
-.list-3 li:nth-child(6n + 1) .text h3 {
+.list-3.with-variation-item li:nth-child(6n) .text h3,
+.list-3.with-variation-item li:nth-child(6n + 1) .text h3 {
   font-size: 16px;
 }
 
@@ -1182,7 +1182,7 @@ section {
   background: #fafafa;
 }
 
-.list-3 li:nth-child(6n) {
+.list-3.with-variation-item li:nth-child(6n) {
   background: #fff;
 }
 
@@ -4167,8 +4167,8 @@ section.photo .container {
     font-size: 18px !important;
   }
 
-  .list-3 li:nth-child(6n) .text h3,
-  .list-3 li:nth-child(6n + 1) .text h3 {
+  .list-3.with-variation-item li:nth-child(6n) .text h3,
+  .list-3.with-variation-item li:nth-child(6n + 1) .text h3 {
     font-size: 14px;
   }
 
@@ -6345,3 +6345,152 @@ section.imsak .text p {
   cursor: pointer;
 }
 /*STICKY VIDEO ADS END*/
+
+/*INFINITY SCROLL UPDATES*/
+.pic,
+.pic img,
+.headline-grid .item img,
+.list-1 li figure,
+.list-4 li .pic,
+.list-7 li,
+.list-7 li img,
+.list-8 li img {
+  overflow: hidden;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.list-3 li.news-group.group-1 .sub-ti {
+  padding-left: 10px;
+}
+.list-3 li.news-group .sub-ti {
+  padding: 10px 0;
+  width: 100%;
+  float: left;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-size: 12px;
+}
+.list-3 li.news-group .sub-ti.red {
+  color: #e40000;
+}
+.list-3 li.news-group .sub-ti.blue {
+  color: #439fd3;
+}
+.list-3 li.news-group {
+  padding: 10px 5px 20px;
+  background: #f4f4f4;
+  width: 100%;
+  float: left;
+  margin: 10px 0;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.list-3 li.news-group.group-1 .item {
+  width: calc((100% - 60px) / 3);
+  float: left;
+  margin: 0 10px;
+}
+.list-3 li.news-group.group-1 .item .pic {
+  width: 100%;
+}
+.list-3 li.news-group.group-1 .item .pic figure {
+  padding-top: 56.25%;
+}
+.list-3 li.news-group.group-1 .item .text {
+  position: relative;
+  width: 100%;
+  float: left;
+  left: auto;
+  top: auto;
+  margin-top: 10px;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+.list-3 li.news-group.group-1 .item .text h3 {
+  font-size: 14px;
+}
+.list-3 li.news-group.group-2 {
+  padding: 20px 15px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.list-3 li.news-group.group-2 .pic,
+.list-3 li.news-group.group-3 .pic {
+  width: 100%;
+}
+.list-3 li.news-group.group-2 .pic figure,
+.list-3 li.news-group.group-3 .pic figure {
+  padding-top: 56.25%;
+}
+.list-3 li.news-group.group-2 .text {
+  width: 100%;
+  float: left;
+  position: relative;
+  top: auto;
+  left: auto;
+  margin-top: 10px;
+  padding: 0 10px;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+.list-3 li.news-group.group-3 {
+  padding: 20px 15px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.list-3 li.news-group.group-3 .text {
+  top: auto;
+  bottom: 20px;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  z-index: 5;
+}
+.list-3 li.news-group.group-3 .text h3 a {
+  color: #fff;
+}
+.list-3 li.news-group.group-3 .text span {
+  color: rgba(255, 255, 255, 0.8);
+}
+.list-3 li.news-group.group-3 figure::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+  z-index: 2;
+}
+.list-3 li.news-group.group-4 {
+  padding: 20px 15px;
+}
+.list-3 li.news-group.group-4 .pic {
+  float: left;
+}
+.list-3 li.news-group.group-4 .text {
+  left: auto;
+  right: 0;
+  width: calc(100% - 180px);
+}
+/*INFINITY SCROLL UPDATES END*/
