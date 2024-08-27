@@ -6494,3 +6494,260 @@ section.imsak .text p {
   width: calc(100% - 180px);
 }
 /*INFINITY SCROLL UPDATES END*/
+
+/*PON*/
+.pon-klasemen {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+}
+.pon-klasemen-title {
+  width: 100%;
+  float: left;
+  text-align: center;
+  background: url(../images/pon/klasemen-header-bg.png) no-repeat center;
+  height: 65px;
+  overflow: hidden;
+  border-radius: 60px 60px 0 0;
+  -webkit-border-radius: 60px 60px 0 0;
+  -moz-border-radius: 60px 60px 0 0;
+  -ms-border-radius: 60px 60px 0 0;
+  -o-border-radius: 60px 60px 0 0;
+}
+.pon-klasemen-title h3 {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 5px 0 2px;
+}
+.pon-klasemen-title a {
+  font-size: 12px;
+  color: #fbb031;
+  font-weight: 700;
+  transition: all ease-out 0.3s;
+  -webkit-transition: all ease-out 0.3s;
+  -moz-transition: all ease-out 0.3s;
+  -ms-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+}
+.pon-klasemen-title a:hover {
+  color: #fff;
+}
+.pon-table-wrapper {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  border-radius: 0 0 40px 40px;
+  -webkit-border-radius: 0 0 40px 40px;
+  -moz-border-radius: 0 0 40px 40px;
+  -ms-border-radius: 0 0 40px 40px;
+  -o-border-radius: 0 0 40px 40px;
+  margin-top: -2px;
+}
+.pon-tabel-klasemen {
+  width: 100%;
+  float: left;
+  background: #231f20;
+}
+.pon-tabel-klasemen th {
+  border-bottom: 5px solid #ed334e;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center !important;
+}
+.pon-tabel-klasemen th:first-child {
+  padding: 10px 50px 10px 20px;
+}
+.pon-tabel-klasemen th:first-child,
+.pon-tabel-klasemen td:first-child {
+  width: 8%;
+}
+.pon-tabel-klasemen th:nth-child(2),
+.pon-tabel-klasemen td:nth-child(2) {
+  width: 32%;
+}
+.pon-tabel-klasemen th:nth-child(3),
+.pon-tabel-klasemen td:nth-child(3),
+.pon-tabel-klasemen th:nth-child(4),
+.pon-tabel-klasemen td:nth-child(4),
+.pon-tabel-klasemen th:nth-child(5),
+.pon-tabel-klasemen td:nth-child(5),
+.pon-tabel-klasemen th:nth-child(6),
+.pon-tabel-klasemen td:nth-child(6) {
+  width: 15%;
+}
+.pon-tabel-klasemen td {
+  border-bottom: 1px solid #ed334e;
+  padding: 7px 20px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center !important;
+  display: none;
+}
+.pon-tabel-klasemen td:first-child {
+  padding: 7px 50px 7px 20px;
+  background: url(../images/pon/klasemen-num-bg.png) no-repeat center right;
+}
+.pon-tabel-klasemen th:nth-child(2),
+.pon-tabel-klasemen td:nth-child(2) {
+  text-align: left !important;
+}
+.pon-jadwal-header {
+  width: 100%;
+  float: left;
+  height: 50px;
+  background: url(../images/pon/bg-jadwal.png) no-repeat center;
+  background-size: cover;
+}
+.pon-jadwal-header h3 {
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  float: left;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  padding: 10px 0;
+}
+.pon-jadwal-acc,
+.pon-acc-item,
+.pon-acc-header,
+.pon-acc-body,
+.pon-jadwal-card {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+.pon-jadwal-acc {
+  background: #f4f4f4;
+  padding: 20px;
+  height: 500px;
+  overflow-y: auto;
+}
+.pon-acc-header {
+  height: 25px;
+  overflow: hidden;
+  background: url(../images/pon/jadwal-acc-head-bg.png) no-repeat center;
+  background-size: cover;
+}
+.pon-acc-item {
+  margin-bottom: 2px;
+}
+.pon-acc-item:first-child .pon-acc-header {
+  border-radius: 12px 12px 0 0;
+  -webkit-border-radius: 12px 12px 0 0;
+  -moz-border-radius: 12px 12px 0 0;
+  -ms-border-radius: 12px 12px 0 0;
+  -o-border-radius: 12px 12px 0 0;
+}
+.pon-acc-header h4 {
+  float: left;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  background: url(../images/pon/jadwal-text-bg.png) no-repeat center right;
+  background-size: cover;
+  padding: 2px 40px 3px 20px;
+}
+.pon-acc-header i {
+  float: right;
+  color: #fff;
+  padding: 5px 20px;
+}
+.pon-acc-body {
+  background: #000;
+  padding: 20px;
+  display: none;
+}
+.pon-jadwal-card {
+  height: 64px;
+  background: url(../images/pon/jadwal-card-bg.png) no-repeat center;
+  background-size: cover;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  margin-bottom: 2px;
+  overflow: hidden;
+}
+.pon-jadwal-card::before {
+  content: "";
+  width: 78px;
+  height: 24px;
+  background: url(../images/pon/jadwal-card-corner.png);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.pon-jadwal-card h5 {
+  float: left;
+  padding: 2px 50px 2px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  height: 25px;
+  background: url(../images/pon/jadwal-text-bg.png) no-repeat center right;
+  background-size: cover;
+}
+.pon-jadwal-card .loc {
+  width: 100%;
+  float: left;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 12px;
+}
+.pon-jadwal-card .loc i {
+  color: #00a551;
+  margin-right: 5px;
+  display: inline-block;
+}
+.pon-jadwal-card .time {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2px 20px;
+  font-size: 14px;
+  color: #fff;
+  text-align: right;
+}
+.pon-klasemen.pops {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+.pon-klasemen.pops .pon-popup {
+  width: 90vw;
+  max-width: 900px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.pon-klasemen.pops .pon-popup .pon-table-wrapper {
+  max-height: 50vh;
+  overflow-y: auto;
+}
+.pon-klasemen .pon-tabel-klasemen tr:nth-child(1) td,
+.pon-klasemen .pon-tabel-klasemen tr:nth-child(2) td,
+.pon-klasemen .pon-tabel-klasemen tr:nth-child(3) td,
+.pon-klasemen .pon-tabel-klasemen tr:nth-child(4) td,
+.pon-klasemen .pon-tabel-klasemen tr:nth-child(5) td,
+.pon-klasemen.pops .pon-tabel-klasemen td {
+  display: table-cell;
+}
+/*PON END*/
