@@ -6834,80 +6834,141 @@ section.imsak .text p {
   }
   /*WIDGET EVENT*/
 
-  /*QURAN UPDATE*/
-    .float-right{
-        float: right;
-    }
-    .sidebar-quran ul{
-        padding: 10px;
-        width: 100%;
+    /*JUZ AMMA UPDATE*/
+    .juz-amma{
+        width: 432px;
         float: left;
-        border: 1px solid #dedede;
-        border-radius: 0 0 16px 16px;
-        -webkit-border-radius: 0 0 16px 16px;
-        -moz-border-radius: 0 0 16px 16px;
-        -ms-border-radius: 0 0 16px 16px;
-        -o-border-radius: 0 0 16px 16px;
-}
-    .sidebar-quran li{
-        width: 100%;
-        float: left;
-        margin-bottom: 10px;
-    }
-    .sidebar-quran li.recent-surrah{
-        width: calc(100% + 10px);
-        float: left;
-        margin-left: -11px;
-        border: 1px solid #dedede;
-        border-left-color: #fff;
-        border-radius: 0 16px 16px 0;
-        -webkit-border-radius: 0 16px 16px 0;
-        -moz-border-radius: 0 16px 16px 0;
-        -ms-border-radius: 0 16px 16px 0;
-        -o-border-radius: 0 16px 16px 0;
         position: relative;
-        padding: 10px 10px 10px 0;
+        z-index: 9;
     }
-    .sidebar-quran li.recent-surrah::before,
-    .sidebar-quran li.recent-surrah::after{
-        content: "";
-        width: 16px;
-        height: 16px;
-        position: absolute;
-        left: -1px;
-    }
-    .sidebar-quran li.recent-surrah::before{
-        background: url(../images/rounded-top-left.png) no-repeat center;
-        top: -16px;
-    }
-    .sidebar-quran li.recent-surrah::after{
-        background: url(../images/rounded-bottom-left.png) no-repeat center;
-        bottom: -16px;
-    }
-    .sidebar-quran li.recent-surrah .card-surat{
-        border-radius: 0 12px 12px 0;
-        -webkit-border-radius: 0 12px 12px 0;
-        -moz-border-radius: 0 12px 12px 0;
-        -ms-border-radius: 0 12px 12px 0;
-        -o-border-radius: 0 12px 12px 0;
-        background: rgb(244,244,244);
-        background: linear-gradient(275deg, rgba(244,244,244,1) 0%, rgba(244,244,244,0) 75%);
-        border: none;
-    }
-    .sidebar-quran li.recent-surrah .card-surat:hover{
-        box-shadow: none;
-    }
-    .widget-title{
-        text-align: center;
-        padding: 10px;
-        background: #333;
-        color: #fff;
+    .juz-amma .widget-title{
+        width: 100%;
+        float: left;
+        height: 60px;
+        display: flex;
+        padding-top: 12px;
+        justify-content: center;
         font-size: 16px;
         font-weight: 700;
-        border-radius: 16px 16px 0 0;
-        -webkit-border-radius: 16px 16px 0 0;
-        -moz-border-radius: 16px 16px 0 0;
-        -ms-border-radius: 16px 16px 0 0;
-        -o-border-radius: 16px 16px 0 0;
-}
-  /*QURAN UPDATE END*/
+        color: #fff;
+        background: url(../images/juz-amma-header.png) no-repeat center;
+        background-size: cover;
+    }
+    .juz-amma ul{
+        width: 100%;
+        float: left;
+        height: calc(100vh - 500px);
+        padding: 0 20px;
+        background: #2463AE;
+        overflow-y: auto;
+    }
+    .juz-amma::after{
+        content: "";
+        width: 100%;
+        height: 300px;
+        background: url(../images/juz-amma-footer.png) no-repeat center;
+        background-size: cover;
+        position: absolute;
+        top: calc(100% - 1px);
+        left: 0;
+    }
+    .juz-amma ul li{
+        width: 100%;
+        float: left;
+    }
+    .juz-amma ul li .card-juz-amma{
+        color: #fff;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: rgba(255,255,255,0.1);
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        margin-bottom: 4px;
+        padding: 2px 10px;
+        transition: all ease-out 0.3s;
+        -webkit-transition: all ease-out 0.3s;
+        -moz-transition: all ease-out 0.3s;
+        -ms-transition: all ease-out 0.3s;
+        -o-transition: all ease-out 0.3s;
+    }
+    .juz-amma ul li .card-juz-amma:hover,
+    .juz-amma ul li.active .card-juz-amma{
+        background: #E99800;
+    }
+    .juz-amma ul li .card-juz-amma .is-flex{
+        align-items: center;
+    }
+    .juz-amma ul li .card-juz-amma .nama-surat{
+        width: auto;
+        padding-right: 15px;
+        border-right: 1px solid rgba(255,255,255,0.2);
+        margin-bottom: 0;
+    }
+    .juz-amma ul li .card-juz-amma .nama-surat-arabic{
+        width: auto;
+        text-align: left;
+        padding-left: 15px;
+    }
+    .juz-amma ul::-webkit-scrollbar {
+        width: 5px;
+        background: rgba(0,0,0,0); 
+        padding: 4px;
+    }
+    .juz-amma ul::-webkit-scrollbar-track {
+      padding: 2px;
+    }
+    .juz-amma ul::-webkit-scrollbar-thumb {
+        background: rgba(255,255,255,0.3);
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        margin: 2px;
+    }
+    .juz-amma ul::-webkit-scrollbar-thumb:hover {
+      background: rgba(255,255,255,0.6); 
+    }
+    .tafsir-quote{
+        width: 100%;
+        float: left;
+        margin: 20px 0;
+        padding: 30px;
+        background: #2463AE;
+        color: rgba(255,255,255,0.8);
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        position: relative;
+    }
+    .tafsir-quote::before,
+    .tafsir-quote::after{
+        content: "";
+        width: 60px;
+        height: 130px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+    }
+    .tafsir-quote::before{
+        content: "";
+        left: -60px;
+        background: url(../images/quran-quote-before.png) no-repeat center;
+    }
+    .tafsir-quote::after{
+        content: "";
+        right: -60px;
+        background: url(../images/quran-quote-after.png) no-repeat center;
+    }
+  /*JUZ AMMA UPDATE END*/
