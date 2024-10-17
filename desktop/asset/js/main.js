@@ -76,4 +76,14 @@ $(document).ready(function () {
   $(".sticky-video-ads .close-bt").click(function () {
     $(".sticky-video-ads").removeClass("show");
   });
+
+  //COMMENT SECTION
+  $(".right-button-wrap .toggle-bt").click(function(tbb){
+    tbb.preventDefault();
+    $($(this).next()).toggleClass("show");
+  });
+  $(".comment-item-foot .reply-bt").click(function(cbb){
+    cbb.preventDefault();
+    $($(this).parent().next()).slideToggle();
+  });
 });
