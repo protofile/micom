@@ -7060,7 +7060,7 @@ section.imsak .text p {
             -moz-border-radius: 8px;
             -ms-border-radius: 8px;
             -o-border-radius: 8px;
-}
+        }
         .menu-juz-amma::before,
         .menu-juz-amma::after{
             content: "";
@@ -7126,6 +7126,9 @@ section.imsak .text p {
   /*JUZ AMMA UPDATE END*/
 
   /*COMMENT SECTION*/
+    .comment-section{
+        margin-bottom: 60px;
+    }
     .new-comment{
         width: 100%;
         float: left;
@@ -7227,7 +7230,7 @@ section.imsak .text p {
     .comment-list{
         width: 100%;
         float: left;
-        padding: 0 20px 60px;
+        padding: 0 20px 30px;
     }
     .comment-item{
         width: 100%;
@@ -7254,6 +7257,9 @@ section.imsak .text p {
         width: 34px;
         height: 34px;
         position: relative;
+    }
+    .comment-item-head .right-button-wrap.active{
+        z-index: 9;
     }
     .comment-item-head .toggle-bt{
         width: 34px;
@@ -7404,5 +7410,214 @@ section.imsak .text p {
     }
     .popup.ask-to-login .bt-secondary{
         background: #efefef;
+    }
+    .report-wrap{
+        width: 240px;
+        padding: 15px 20px 20px;
+        position: absolute;
+        top: -20px;
+        right: 0;
+        background: #fff;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+        border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -o-border-radius: 12px;
+        transition: all ease-out 0.3s;
+        -webkit-transition: all ease-out 0.3s;
+        -moz-transition: all ease-out 0.3s;
+        -ms-transition: all ease-out 0.3s;
+        -o-transition: all ease-out 0.3s;
+        opacity: 0;
+        pointer-events: none;
+    }
+    .right-button-wrap.active{
+        z-index: 9;
+    }
+    .right-button-wrap.active .report-wrap{
+        opacity: 1;
+        pointer-events: auto;
+        top: 0;
+    }
+    .report-wrap p,
+    .report-wrap label{
+        font-size: 12px;
+    }
+    .report-check-group{
+        width: 100%;
+        float: left;
+        margin-bottom: 10px;
+        z-index: 9;
+    }
+    .report-wrap label{
+        width: 100%;
+        float: left;
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center;
+    }
+    .report-wrap label input{
+        margin-right: 4px;
+    }
+    .report-foot{
+        width: 100%;
+        float: left;
+        text-align: right;
+    }
+    .report-foot .bt{
+        font-size: 14px;
+        border: none;
+        padding: 5px 15px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        transition: all ease-out 0.3s;
+        -webkit-transition: all ease-out 0.3s;
+        -moz-transition: all ease-out 0.3s;
+        -ms-transition: all ease-out 0.3s;
+        -o-transition: all ease-out 0.3s;
+    }
+    .report-foot .bt:hover{
+        box-shadow: 0 3px 6px rgba(0,0,0,0.25);
+        cursor: pointer;
+        background: #fff;
+    }
+    .report-foot .bt.bt-primary{
+        background: #dc0000;
+        color: #fff;
+    }
+    .report-foot .bt.bt-primary:hover{
+        background: #fe0000;
+    }
+    .view-more-comment{
+        width: 100%;
+        float: left;
+        display: flex;
+        justify-content: center;
+    }
+    .view-more-comment .bt{
+        float: none;
+    }
+
+    .commented-news{
+        width: 100%;
+        float: left;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        margin-bottom: 30px;
+        background: #f4f4f4;
+        border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -o-border-radius: 12px;
+    }
+    .commented-news .pic{
+        width: 40%;
+    }
+    .commented-news .text{
+        width: 60%;
+        padding-left: 30px;
+        padding-right: 10px;
+    }
+    .commented-news .text h2{
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    .commented-news .text h2 a{
+        color: #333;
+        transition: all ease-out 0.3s;
+        -webkit-transition: all ease-out 0.3s;
+        -moz-transition: all ease-out 0.3s;
+        -ms-transition: all ease-out 0.3s;
+        -o-transition: all ease-out 0.3s;
+    }
+    .commented-news .text h2 a:hover{
+        color: #982323;
+    }
+    .commented-news .text .date{
+        font-size: 12px;
+        color: #555;
+        margin-bottom: 10px;
+    }
+    .commented-news .text p{
+        font-size: 14px;
+        color: #333;
+    }
+    .action-bar{
+        width: 100%;
+        float: left;
+        display: flex;
+        justify-content: end;
+        transition: all ease-out 0.3s;
+        -webkit-transition: all ease-out 0.3s;
+        -moz-transition: all ease-out 0.3s;
+        -ms-transition: all ease-out 0.3s;
+        -o-transition: all ease-out 0.3s;
+        opacity: 0;
+        pointer-events: none;
+        margin-top: 10px;
+    }
+    .item:hover .action-bar,
+    li:hover .action-bar{
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .action-bar button{
+        display: flex;
+        border: 1px solid #dedede;
+        border-right: none;
+        padding: 5px 10px;
+        font-size: 12px;
+        align-items: center;
+        background: #fff;
+        color: #777;
+        transition: all ease-out 0.3s;
+        -webkit-transition: all ease-out 0.3s;
+        -moz-transition: all ease-out 0.3s;
+        -ms-transition: all ease-out 0.3s;
+        -o-transition: all ease-out 0.3s;
+    }
+    .action-bar button:first-child{
+        border-radius: 6px 0 0 6px;
+        -webkit-border-radius: 6px 0 0 6px;
+        -moz-border-radius: 6px 0 0 6px;
+        -ms-border-radius: 6px 0 0 6px;
+        -o-border-radius: 6px 0 0 6px;
+    }
+    .action-bar button:last-child{
+        border-right: 1px solid #dedede;
+        border-radius: 0 6px 6px 0;
+        -webkit-border-radius: 0 6px 6px 0;
+        -moz-border-radius: 0 6px 6px 0;
+        -ms-border-radius: 0 6px 6px 0;
+        -o-border-radius: 0 6px 6px 0;
+    }
+    .action-bar button:hover{
+        background: #496ECD;
+        color: #FECD43;
+        cursor: pointer;
+        border-color: rgba(255,255,255,0);
+    }
+    .action-bar button span{
+        margin-left: 5px;
+    }
+    .action-bar button:hover span{
+        color: #fff;
+    }
+    .meta-info-2{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .headline-grid .item .action-bar{
+        position: absolute;
+        bottom: 0;
+        right: 30px;
     }
   /*COMMENT SECTION END*/

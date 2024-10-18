@@ -33,7 +33,11 @@ $(document).ready(function () {
   //COMMENT SECTION
   $(".right-button-wrap .toggle-bt").click(function(tbb){
     tbb.preventDefault();
-    $($(this).next()).toggleClass("show");
+    $($(this).parent()).addClass("active");
+  });
+  $(".report-foot .close-bt").click(function(rw){
+    rw.preventDefault();
+    $($(this).parent().parent().parent()).removeClass("active");
   });
   $(".comment-item-foot .reply-bt").click(function(cbb){
     cbb.preventDefault();
