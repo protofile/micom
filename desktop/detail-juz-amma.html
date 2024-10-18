@@ -39,6 +39,23 @@
                 </div>
             </div>
         </div>
+        <section class="mid-ct bg-header-quran">
+            <div class="container">
+                <div class="columns quran-header is-centered">
+                    <!-- MAIN CONTENT ALQURAN -->
+                    <div class="column is-6">
+                        <h2 class="has-text-centered">Kalam</h2>
+                        <p class="has-text-centered">Online Quran</p>
+                        <div class="search">
+                            <input type="text" class="searchTerm" placeholder="Surat apa yang ingin anda baca?">
+                            <button type="submit" class="searchButton">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="detail">
             <div class="container">
                 <div class="columns is-centered">
@@ -62,8 +79,8 @@
                                 <p><i>Bismillāhir-raḥmānir-raḥīm(i).</i></p>
                                 <p>Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang.</p>
                                 <div class="fitur-ayat">
-                                    <a href="" class="button is-small"><i class="fa fa-book"></i> Juz ke-1</a>
-                                    <a href="" class="button is-small">Lihat Tafsir<i class="fa fa-angle-double-right"></i></a>
+                                    <a href="" class="bt bt-secondary"><i class="fa fa-book"></i> Juz ke-1</a>
+                                    <a href="" class="bt bt-primary">Lihat Tafsir<i class="fa fa-angle-double-right"></i></a>
                                 </div>
                             </div>
                             <div class="items-ayat">
@@ -76,8 +93,8 @@
                                 <p><i>Bismillāhir-raḥmānir-raḥīm(i).</i></p>
                                 <p>Dengan nama Allah Yang Maha Pengasih lagi Maha Penyayang.</p>
                                 <div class="fitur-ayat">
-                                    <a href="" class="button is-small"><i class="fa fa-book"></i> Juz ke-1</a>
-                                    <a href="" class="button is-small">Lihat Tafsir<i class="fa fa-angle-double-right"></i></a>
+                                    <a href="" class="bt bt-secondary"><i class="fa fa-book"></i> Juz ke-1</a>
+                                    <a href="" class="bt bt-primary">Lihat Tafsir<i class="fa fa-angle-double-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -418,10 +435,7 @@
                 }
             });
 
-            $(".menu-juz-amma").click(function(){
-                $(".juz-amma").toggleClass("show");
-                $(this).children("i").toogleClass("caret-up caret-down");
-            });       
+                  
 
         });
     </script>

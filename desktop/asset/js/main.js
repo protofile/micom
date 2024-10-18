@@ -90,4 +90,10 @@ $(document).ready(function () {
     cbb.preventDefault();
     $($(this).parent().next()).slideToggle();
   });
+
+  //JUZ AMMA
+  $(".menu-juz-amma").click(function(){
+    $(".juz-amma").toggleClass("show");
+    $(this).children("i").toogleClass("caret-up caret-down");
+  }); 
 });

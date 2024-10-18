@@ -6971,6 +6971,9 @@ section.imsak .text p {
         right: -60px;
         background: url(../images/quran-quote-after.png) no-repeat center;
     }
+    .tafsir-quote p:last-child{
+        margin-bottom: 0;
+    }
     .header-quran{
         width: 100%;
         float: left;
@@ -7009,7 +7012,6 @@ section.imsak .text p {
         width: 100%;
         float: left;
         padding-top: 86px;
-        overflow-x: hidden;
     }
     .for-mobile{
         display: none;
@@ -7019,6 +7021,26 @@ section.imsak .text p {
         top: 0;
         right: 0;
         color: #fff;
+    }
+    .fitur-ayat a.bt{
+        display: flex;
+        float: left;
+        align-items: center;
+        justify-content: center;
+        padding: 6px 10px 6px 20px;
+        margin-right: 10px;
+    }
+    .fitur-ayat a.bt:nth-child(2) i{
+        margin-left: 10px;
+    }
+    .items-ayat{
+        width: 100%;
+        float: left;
+        padding: 20px 0;
+        margin-bottom: 0;
+    }
+    .master-quran .post-header{
+        margin-bottom: 0;
     }
     @media only screen and (max-width:768px){
         .for-mobile{display: block;}
