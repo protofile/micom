@@ -7687,7 +7687,7 @@ section.imsak .text p {
         background: #496ECD url(../images/sticker-up.png) no-repeat center;
     }
     .sticker-pop{
-        width: 50%;
+        width: 100%;
         position: absolute;
         top: 80%;
         right: 0;
@@ -7729,13 +7729,13 @@ section.imsak .text p {
         overflow-y: auto;
     }
     .sticker-list button{
-        width: calc((100% - 100px) / 4);
+        width: calc((100% - 160px) / 8);
         float: left;
         margin: 10px;
         background: none;
         border: none;
         border-bottom: 1px solid rgba(255,255,255,0);
-        display: none;
+        /*display: none;*/
     }
     .sticker-list button:hover{
         cursor: pointer;

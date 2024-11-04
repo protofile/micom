@@ -104,11 +104,11 @@ $(document).ready(function () {
     $(".sticker-pop").toggleClass("show");
   });
   //filter
-  $(".sticker-filter a").click(function(sfa){
+  /*$(".sticker-filter a").click(function(sfa){
     sfa.preventDefault();
     $(".sticker-filter a").removeClass("active");
     $(this).addClass("active");
     $(".sticker-list button").removeClass("show");
     $("." + $(this).attr("href")).addClass("show");
-  });
+  });*/
 });

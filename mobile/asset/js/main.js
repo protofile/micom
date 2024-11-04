@@ -49,4 +49,19 @@ $(document).ready(function () {
     $(".juz-amma").toggleClass("show");
     $($(this).children(".fa")).toggleClass("fa-caret-up fa-caret-down");
   }); 
+
+  //STICKER COMMENT
+  $(".sticker-bt").click(function(sb){
+    sb.preventDefault();
+    $(this).toggleClass("clicked");
+    $(".sticker-pop").toggleClass("show");
+  });
+  //filter
+  /*$(".sticker-filter a").click(function(sfa){
+    sfa.preventDefault();
+    $(".sticker-filter a").removeClass("active");
+    $(this).addClass("active");
+    $(".sticker-list button").removeClass("show");
+    $("." + $(this).attr("href")).addClass("show");
+  });*/
 });
