@@ -5529,21 +5529,12 @@ section.imsak .text p {
 .tts-form {
     width: calc(100% - 40px);
     max-width: 480px;
-    background: #fff;
-    border: 1px solid #dedede;
-    /*position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    -moz-transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);*/
     display: block;
     z-index: 3;
     padding: 40px;
     border-radius: 12px;
     -moz-border-radius: 12px;
     -webkit-border-radius: 12px;
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
     margin: 80px auto;
 }
 
