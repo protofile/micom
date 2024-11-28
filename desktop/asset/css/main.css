@@ -9118,4 +9118,32 @@ hr.mi-divider{
 .bt.bt-icon:hover{
     color: #0154a2;
 }
+.comment-footer .bt-group{
+    display: none;
+}
+.comment-footer .bt-group.show{
+    display: flex;
+}
 /*PREMIUM 2*/
+
+/*QURAN*/
+.quran-title{
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.quran-title h1{
+    width: auto;
+    margin-bottom: 0;
+}
+.ayat-arabic{
+    transition: all ease-out 0.3s;
+    -webkit-transition: all ease-out 0.3s;
+    -moz-transition: all ease-out 0.3s;
+    -ms-transition: all ease-out 0.3s;
+    -o-transition: all ease-out 0.3s;
+}
+/*QURAN END*/

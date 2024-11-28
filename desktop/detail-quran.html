@@ -49,7 +49,15 @@
                                 <li><a href="#">Alquran Digital <i class="fa fa-angle-right"></i></a> </i></li>
                                 <li><a href="#">Al-Fatihah</a></li>
                             </ul>
-                            <h1>At Takwir <span>Menggulung</span></h1>
+                            <div class="quran-title">
+                                <h1>At Takwir <span>Menggulung</span></h1>
+                                <div class="font-size-bt-group">
+                                    <button class="bt-min">A-</button>
+                                    <button class="bt-plus">A+</button>
+                                    <span class="indicator"></span>
+                                </div>
+                            </div>
+                            
                         </div>
                         <div class="article">
                             <div class="items-ayat">
@@ -241,15 +249,17 @@
 
             var afs = 14;
             var ipos = -100;
+            var qfs = 40;
             $(".article").css("font-size", afs + "px");
             $(".font-size-bt-group .indicator").css("left", ipos + "%");
             $(".bt-min").click(function () {
                 if (afs > 14) {
                     afs--;
+                    qfs--;
                     ipos = ipos - 25;
                     $(".article").css("font-size", afs + "px");
+                    $(".article .ayat-arabic").css("font-size", qfs + "px");
                     $(".font-size-bt-group .indicator").css("left", ipos + "%");
-                    console.log(ipos);
                 } else {
                     //do nothing
                 }
@@ -257,10 +267,11 @@
             $(".bt-plus").click(function () {
                 if (afs < 18) {
                     afs++;
+                    qfs++;
                     ipos = ipos + 25;
                     $(".article").css("font-size", afs + "px");
+                    $(".article .ayat-arabic").css("font-size", qfs + "px");
                     $(".font-size-bt-group .indicator").css("left", ipos + "%");
-                    console.log(ipos);
                 } else {
                     //do nothing
                 }

@@ -59,7 +59,7 @@
                                    <li><a href="#informasi-berlangganan"><i class="fa fa-newspaper"></i> Informasi Berlangganan</a></li>
                                    <li><a href="#kelola-pembayaran"><i class="fa fa-credit-card"></i> Kelola Pembayaran</a></li>
                                    <li><a href="#rubrik-pilihanku"><i class="fa fa-star"></i> Rubrik Pilihanku</a></li>
-                                   <li><a href="#aktifitas"><i class="fa fa-walking"></i> Aktifitas</a></li>
+                                   <!--li><a href="#aktifitas"><i class="fa fa-walking"></i> Aktifitas</a></li-->
                                    <li><a href="#komentar-anda"><i class="fa fa-comment"></i> Komentar Anda</a></li>
                                    <li><a href="#notifikasi"><i class="fa fa-bell"></i> Notifikasi</a></li>
                                    <li><a href="#detail-akun"><i class="fa fa-user"></i> Detail Akun</a></li>
@@ -335,7 +335,7 @@
                                 </div>
                             </section>
                         </div>
-                        <div id="aktifitas" class="account-content-ct"></div>
+                        <!--div id="aktifitas" class="account-content-ct"></div-->
                         <div id="komentar-anda" class="account-content-ct">
                             <h2>Komentar Anda</h2>
                             <p class="mb-5">Kelola komentar anda</p>
@@ -354,14 +354,67 @@
                                     </div>
                                     <div class="comment-footer">
                                         <span>5 balasan</span>
-                                        <div class="bt-group">
+                                        <div class="bt-group group-1 show">
                                             <a href="#" class="bt bt-icon sm"><i class="fa fa-eye"></i></a>
                                             <a href="#" class="bt bt-icon sm edit-bt"><i class="fa fa-edit"></i></a>
                                             <a href="#" class="bt bt-icon sm"><i class="fa fa-trash"></i></a>
                                         </div>
+                                        <div class="bt-group group-2">
+                                            <a href="#" class="bt bt-grey sm bt-cancel">Batal</a>
+                                            <a href="#" class="bt bt-primary ml-2 sm">Simpan</a>
+                                        </div>
                                     </div>
                                 </div>
-                                
+                                <div class="item">
+                                    <div class="comment-head">
+                                        <img src="asset/images/bank/pic12.jpeg" alt="">
+                                        <div class="text">
+                                             <h3><a href="#">Judul dan Link Berita yang Dikomentari</a></h3>   
+                                             <span class="datetime">12 Nov 2024 - 14:20 WIB</span>
+                                        </div>
+                                    </div>
+                                    <div class="comment-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan sagittis sem, eu lacinia arcu fringilla a. Donec laoreet lectus et diam vestibulum blandit. Suspendisse lacinia malesuada velit, nec congue massa</p>
+                                        <textarea name="" id="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan sagittis sem, eu lacinia arcu fringilla a. Donec laoreet lectus et diam vestibulum blandit. Suspendisse lacinia malesuada velit, nec congue massa</textarea>
+                                    </div>
+                                    <div class="comment-footer">
+                                        <span>5 balasan</span>
+                                        <div class="bt-group group-1 show">
+                                            <a href="#" class="bt bt-icon sm"><i class="fa fa-eye"></i></a>
+                                            <a href="#" class="bt bt-icon sm edit-bt"><i class="fa fa-edit"></i></a>
+                                            <a href="#" class="bt bt-icon sm"><i class="fa fa-trash"></i></a>
+                                        </div>
+                                        <div class="bt-group group-2">
+                                            <a href="#" class="bt bt-grey sm bt-cancel">Batal</a>
+                                            <a href="#" class="bt bt-primary ml-2 sm">Simpan</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="comment-head">
+                                        <img src="asset/images/bank/pic12.jpeg" alt="">
+                                        <div class="text">
+                                             <h3><a href="#">Judul dan Link Berita yang Dikomentari</a></h3>   
+                                             <span class="datetime">12 Nov 2024 - 14:20 WIB</span>
+                                        </div>
+                                    </div>
+                                    <div class="comment-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan sagittis sem, eu lacinia arcu fringilla a. Donec laoreet lectus et diam vestibulum blandit. Suspendisse lacinia malesuada velit, nec congue massa</p>
+                                        <textarea name="" id="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan sagittis sem, eu lacinia arcu fringilla a. Donec laoreet lectus et diam vestibulum blandit. Suspendisse lacinia malesuada velit, nec congue massa</textarea>
+                                    </div>
+                                    <div class="comment-footer">
+                                        <span>5 balasan</span>
+                                        <div class="bt-group group-1 show">
+                                            <a href="#" class="bt bt-icon sm"><i class="fa fa-eye"></i></a>
+                                            <a href="#" class="bt bt-icon sm edit-bt"><i class="fa fa-edit"></i></a>
+                                            <a href="#" class="bt bt-icon sm"><i class="fa fa-trash"></i></a>
+                                        </div>
+                                        <div class="bt-group group-2">
+                                            <a href="#" class="bt bt-grey sm bt-cancel">Batal</a>
+                                            <a href="#" class="bt bt-primary ml-2 sm">Simpan</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div id="notifikasi" class="account-content-ct">
@@ -730,6 +783,14 @@
                 eb.preventDefault();
                 $($(this).parent().parent().prev()).addClass("active");
                 $($(this).parent().parent().prev()).children("textarea").focus();
+                $($(this).closest(".group-1")).removeClass("show");
+                $($(this).closest(".group-1").next()).addClass("show");
+            });
+            $(".bt-cancel").click(function(btc){
+                btc.preventDefault();
+                $($(this).parent().parent().prev()).removeClass("active");
+                $($(this).closest(".group-2")).removeClass("show");
+                $($(this).closest(".group-2").prev()).addClass("show");
             });
         });
     </script>
