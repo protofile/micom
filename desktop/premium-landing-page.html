@@ -184,7 +184,7 @@
                                 <li><i class="fa fa-check"></i> Akses semua artikel di mediaindonesia.com</li>
                                 <li><i class="fa fa-check"></i> Akses multiplatform: Web, iOS & Android</li>
                             </ul>
-                            <a href="#" class="bt bt-primary">Pilih Paket</a>
+                            <a href="#periode-paket" class="bt bt-primary pop-link">Pilih Paket</a>
                         </div>
                     </div>
                     <div class="column is-4">
@@ -480,6 +480,57 @@
 
     </div>
 
+    <div id="periode-paket" class="overlay">
+        <div class="popup">
+            <div class="close-bt"><i class="fa fa-times"></i></div>
+            <div class="popup-content">
+                <h3 class="mb-5 has-text-centered">Pilih Periode Berlangganan</h3>
+                <div class="columns">
+                    <div class="column is-one-fifth">
+                        <div class="periode-card">
+                            <p><strong>1 Bulan</strong></p>
+                            <div class="price">Rp 50.000</div>
+                            <a href="#" class="bt bt-primary">Pilih Paket</a>
+                        </div>
+                    </div>
+                    <div class="column is-one-fifth">
+                        <div class="periode-card">
+                            <p><strong>3 Bulan</strong></p>
+                            <div class="price">Rp 120.000</div>
+                            <a href="#" class="bt bt-primary">Pilih Paket</a>
+                        </div>
+                    </div>
+                    <div class="column is-one-fifth">
+                        <div class="periode-card">
+                            <p><strong>6 Bulan</strong></p>
+                            <div class="price">Rp 200.000</div>
+                            <a href="#" class="bt bt-primary">Pilih Paket</a>
+                        </div>
+                    </div>
+                    <div class="column is-one-fifth">
+                        <div class="periode-card best-price">
+                            <p><strong>1 Tahun</strong></p>
+                            <div class="old-price">Rp 600.000</div>
+                            <div class="price">Rp 360.000</div>
+                            <a href="#" class="bt bt-primary">Pilih Paket</a>
+                            <div class="note">Hanya 30.000/bulan</div>
+                        </div>
+                    </div>
+                    <div class="column is-one-fifth">
+                        <div class="periode-card">
+                            <p><strong>2 Tahun</strong></p>
+                            <div class="old-price">Rp 1.200.000</div>
+                            <div class="price">Rp 600.000</div>
+                            <a href="#" class="bt bt-primary">Pilih Paket</a>
+                            <div class="note">Hanya 25.000/bulan</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
     <script src="asset/js/jquery-1.11.0.min.js"></script>
     <script src="asset/js/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bulma-accordion@2.0.1/dist/js/bulma-accordion.min.js"></script>
@@ -540,6 +591,15 @@
                 $(this).toggleClass("active");
                 $($(this).children(".acc-body")).slideToggle();
                 $($(this).children(".acc-header").children(".fa")).toggleClass("fa-caret-down fa-caret-up");
+            });
+
+            $(".pop-link").click(function(pl){
+                pl.preventDefault();
+                $($(this).attr("href")).addClass("show");
+            });
+            $(".close-bt").click(function(pl){
+                pl.preventDefault();
+                $(".overlay").removeClass("show");
             });
         });
     </script>
