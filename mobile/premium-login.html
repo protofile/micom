@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Indonesia</title>
+
+    <link rel="stylesheet" href="asset/css/normalize.css">
+    <link rel="stylesheet" href="asset/css/bulma.min.css">
+    <link rel="stylesheet" href="asset/css/fontawesome-all.css">
+    <link rel="stylesheet" href="asset/css/owl.carousel.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Load bulma accordion CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-accordion@2.0.1/dist/css/bulma-accordion.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/main.css">
+</head>
+<body>
+    
+    <div class="master pt-0">
+
+        <div class="simple-header justify-center">
+            <a href="#">
+                <img src="asset/images/logo.png" alt="">
+            </a>
+        </div>
+        <div class="account-page">
+            <form action="" class="tts-form">
+                <div class="inp-group">
+                    <h3>Login</h3>
+                </div>
+                <div class="inp-group">
+                    <label for="">Username/Email</label>
+                    <input type="text" placeholder="Username/Email">
+                </div>
+                <div class="inp-group">
+                    <label for="">Password</label>
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="inp-group has-text-right">
+                    <a href="#">Lupa password?</a>
+                </div>
+                <div class="inp-group">
+                    <button>LOGIN</button>
+                </div>
+                <div class="inp-group">
+                    <div class="button-group">
+                        <a href="#" class="bt bt-google"><i class="fab fa-google"></i>Login with Google</a>
+                        <a href="#" class="bt bt-facebook"><i class="fab fa-facebook-f"></i>Login with Facebook</a>
+                    </div>
+                </div>
+                <div class="inp-group">
+                    <p class="has-text-centered">
+                        Belum punya akun? <a href="tts-register.html">DAFTAR DISINI</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    
+
+    <script src="asset/js/jquery-1.11.0.min.js"></script>
+    <script src="asset/js/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bulma-accordion@2.0.1/dist/js/bulma-accordion.min.js"></script>
+    <script src="asset/js/main.js"></script>
+    <script>
+        var accordions = bulmaAccordion.attach()
+        $(document).ready(function(){
+
+            $(".newsticker-slider").owlCarousel({
+                singleItem: true,
+                navigation: false,
+                pagination: false,
+                autoPlay: true
+            });
+
+            $(".related").owlCarousel({
+                singleItem: true,
+                navigation: false,
+                pagination: false,
+                autoPlay: true
+            });
+
+            $(window).scroll(function(){
+                if ($(window).scrollTop() >= 530) {
+                    $('.share-group').addClass('sticky');
+                }
+                else {
+                    $('.share-group').removeClass('sticky');
+                }
+            });
+
+            var afs=14;
+            var ipos= -100;
+            $(".article").css("font-size", afs + "px");
+            $(".font-size-bt-group .indicator").css("left", ipos + "%");
+            $(".bt-min").click(function(){
+                if(afs>14){
+                    afs --;
+                    ipos = ipos-25;
+                    $(".article").css("font-size", afs + "px");
+                    $(".font-size-bt-group .indicator").css("left", ipos + "%");
+                    console.log(ipos);
+                }else{
+                    //do nothing
+                }
+            });
+            $(".bt-plus").click(function(){
+                if(afs<18){
+                    afs ++;
+                    ipos = ipos+25;
+                    $(".article").css("font-size", afs + "px");
+                    $(".font-size-bt-group .indicator").css("left", ipos + "%");
+                    console.log(ipos);
+                }else{
+                    //do nothing
+                }
+            });
+
+            $(".pop-link").click(function(pl){
+                pl.preventDefault();
+                $($(this).attr("href")).addClass("show");
+            });
+            $(".close-bt").click(function(pl){
+                pl.preventDefault();
+                $(".overlay").removeClass("show");
+            });
+
+            $(".package-card-2").click(function(){
+                $($(this).children(".package-2-toggle")).slideToggle();
+            });
+
+            $(".mi-accordion .item").click(function(){
+                $(this).toggleClass("active");
+                $($(this).children(".acc-body")).slideToggle();
+                $($(this).children(".acc-header").children(".fa")).toggleClass("fa-caret-down fa-caret-up");
+            });
+        });
+    </script>
+</body>
+</html>

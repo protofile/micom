@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Indonesia</title>
+
+    <link rel="stylesheet" href="asset/css/normalize.css">
+    <link rel="stylesheet" href="asset/css/bulma.min.css">
+    <link rel="stylesheet" href="asset/css/fontawesome-all.css">
+    <link rel="stylesheet" href="asset/css/owl.carousel.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Load bulma accordion CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-accordion@2.0.1/dist/css/bulma-accordion.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="asset/css/main.css">
+</head>
+<body>
+    
+    <div class="master pt-0">
+
+        <div class="simple-header justify-center">
+            <a href="#">
+                <img src="asset/images/logo.png" alt="">
+            </a>
+        </div>
+        <section class="redeem-voucher">
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-8">
+                        <img src="asset/images/bank/pic11.jpeg" alt="" class="voucher-header-page mt-5">
+                    </div>
+                </div>
+                <div class="columns is-centered">
+                    <div class="column is-8">
+                        <form action="" class="has-text-centered voucher-form">
+                            <p>Silakan masukkan kode voucher Anda di bawah ini untuk memperoleh akses Mediaindonesia.com</p>
+                            <div class="inp-group">
+                                <label for="">Kode Voucher</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="inp-group">
+                                <button class="bt bt-primary">Redeem</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="columns is-centered mb-5">
+                    <div class="column is-8">
+                        <h4>Cara Menukarkan Voucher</h4>
+                        <ol>
+                           <li>Masuk ke voucher.mediaindonesia.com</li>
+                           <li>Daftar/Masuk akun mediaindonesia.com</li>
+                           <li>Jika sudah masuk, silakan masukkan kode voucher</li>
+                           <li>Selamat menikmati akses Mediaindonesia.com Premium</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="columns is-centered">
+                    <div class="column is-8">
+                        <h4>Syarat dan Ketentuan</h4>
+                        <ol>
+                           <li>Voucer ini adalah voucer langganan Mediaindonesia Premium dengan periode 1, 3, 6, atau 12 bulan dan tidak berlaku untuk langganan Media Indonesia cetak.</li>
+                           <li>Khusus untuk program "Voucher Gratis 1 Bulan" dari partner, hanya berlaku untuk pengguna baru.</li>
+                           <li>Periode langganan dimulai saat voucer ditukarkan.</li>
+                           <li>Jika sudah ada akses Kompas Digital Premium sebelumnya, maka voucer ini tidak menambah masa akses melainkan menimpa masa akses sebelumnya.</li>
+                           <li>Voucer ini hanya dapat dipakai dan ditukarkan untuk 1 (satu) kali.</li>
+                           <li>Voucer ini tidak dapat dikembalikan dan ditukarkan dalam bentuk uang.</li>
+                           <li>Tidak dapat digabung dengan promosi lainnya.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    
+
+    <script src="asset/js/jquery-1.11.0.min.js"></script>
+    <script src="asset/js/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bulma-accordion@2.0.1/dist/js/bulma-accordion.min.js"></script>
+    <script src="asset/js/main.js"></script>
+    <script>
+        var accordions = bulmaAccordion.attach()
+        $(document).ready(function(){
+
+            $(".newsticker-slider").owlCarousel({
+                singleItem: true,
+                navigation: false,
+                pagination: false,
+                autoPlay: true
+            });
+
+            $(".related").owlCarousel({
+                singleItem: true,
+                navigation: false,
+                pagination: false,
+                autoPlay: true
+            });
+
+            $(window).scroll(function(){
+                if ($(window).scrollTop() >= 530) {
+                    $('.share-group').addClass('sticky');
+                }
+                else {
+                    $('.share-group').removeClass('sticky');
+                }
+            });
+
+            var afs=14;
+            var ipos= -100;
+            $(".article").css("font-size", afs + "px");
+            $(".font-size-bt-group .indicator").css("left", ipos + "%");
+            $(".bt-min").click(function(){
+                if(afs>14){
+                    afs --;
+                    ipos = ipos-25;
+                    $(".article").css("font-size", afs + "px");
+                    $(".font-size-bt-group .indicator").css("left", ipos + "%");
+                    console.log(ipos);
+                }else{
+                    //do nothing
+                }
+            });
+            $(".bt-plus").click(function(){
+                if(afs<18){
+                    afs ++;
+                    ipos = ipos+25;
+                    $(".article").css("font-size", afs + "px");
+                    $(".font-size-bt-group .indicator").css("left", ipos + "%");
+                    console.log(ipos);
+                }else{
+                    //do nothing
+                }
+            });
+
+            $(".pop-link").click(function(pl){
+                pl.preventDefault();
+                $($(this).attr("href")).addClass("show");
+            });
+            $(".close-bt").click(function(pl){
+                pl.preventDefault();
+                $(".overlay").removeClass("show");
+            });
+
+            $(".package-card-2").click(function(){
+                $($(this).children(".package-2-toggle")).slideToggle();
+            });
+
+            $(".mi-accordion .item").click(function(){
+                $(this).toggleClass("active");
+                $($(this).children(".acc-body")).slideToggle();
+                $($(this).children(".acc-header").children(".fa")).toggleClass("fa-caret-down fa-caret-up");
+            });
+        });
+    </script>
+</body>
+</html>
