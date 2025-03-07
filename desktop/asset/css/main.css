@@ -9215,3 +9215,90 @@ hr.mi-divider{
     -o-transition: all ease-out 0.3s;
 }
 /*QURAN END*/
+
+
+/*UPDATE PREMIUM 2025*/
+.premium-ti{
+    width: 100%;
+    float: left;
+    position: relative;
+    padding-left: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .premium-ti::before{
+    content: "";
+    width: 6px;
+    height: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background: #002761;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .premium-section .bt.bt-primary{
+    background: #002761;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.premium-news-item{
+    width: 100%;
+    float: left;
+    position: relative;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    overflow: hidden;
+}
+.premium-news-item a.ratio::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9;
+    background: url(../images/micom-premium/premium-frame.png) no-repeat center;
+    background-size: contain;
+}
+.premium-news-item a.ratio{
+    width: 100%;
+    float: left;
+    position: relative;
+    height: 0;
+    padding-top: 118.54%;
+}
+.premium-news-item img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.premium-news-item h3{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 60px 20px 30px;
+    background: url(../images/micom-premium/shadow.png) repeat-x center top;
+    background-size: contain;
+    font-size: 16px;
+}
+.premium-news-item h3 a{
+    color: #fff;
+}
+.mid-ct.premium-section .column{
+    padding-top: 0.75rem;
+}
+/*UPDATE PREMIUM 2025 END*/
