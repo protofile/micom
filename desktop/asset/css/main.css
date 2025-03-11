@@ -9302,3 +9302,18 @@ hr.mi-divider{
     padding-top: 0.75rem;
 }
 /*UPDATE PREMIUM 2025 END*/
+
+/*UPDATE LOGIN BT*/
+.login-bt{
+    display: flex !important;
+    align-items: center;
+    padding: 8px;
+    background: #0356a8;
+    height: 51px;
+    margin-top: -10px;
+    color: #fff !important;
+}
+.login-bt i{
+    margin-right: 8px;
+}
+/*UPDATE LOGIN BT*/
