@@ -9317,3 +9317,179 @@ hr.mi-divider{
     margin-right: 8px;
 }
 /*UPDATE LOGIN BT*/
+
+/*UPDATE DASBOARD*/
+
+.mutasi-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+.mutasi-list .item{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    border: 1px solid #dedede;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    padding: 20px;
+}
+.mutasi-list .item i{
+    display: flex;
+    width: 30px;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 18px;
+}
+.mutasi-list .item i.fa-arrow-down{
+    color: #00a551;
+}
+.mutasi-list .item i.fa-arrow-up{
+    color: #ff5000;
+}
+.mutasi-list .item .text{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+.mutasi-list .item .text h4{
+    font-weight: 700;
+}
+.mutasi-list .item .text span{
+    font-size: 12px;
+}
+.mutasi-list .item .text p{
+    margin-bottom: 0;
+}
+.mutasi-list .item .price{
+    white-space: nowrap;
+    text-align: right;
+    font-size: 22px;
+    font-weight: 700;
+}
+.daftar-berita{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+.daftar-berita .news-item{
+    display: flex;
+    gap: 20px;
+    padding: 16px;
+    border: 1px solid #dedede;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.daftar-berita .news-item .pic{
+    width: 100%;
+    max-width: 200px;
+}
+.daftar-berita .news-item .text{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.daftar-berita .news-item .text h3{
+    margin-bottom: 0;
+}
+.daftar-berita .news-item .text h3 a{
+    color: #439FD3;
+}
+.daftar-berita .news-item .text .meta-info{
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.daftar-berita .news-item .text p{
+    margin-bottom: 0;
+}
+#berita-dibeli .inp-group{
+    display: flex;
+    gap: 8px;
+}
+#berita-dibeli .inp-group input{
+    padding: 8px 16px;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+}
+#berita-dibeli .inp-group button{
+    padding: 8px 16px;
+    width: 80px;
+    font-size: 14px;
+    background: #efefef;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    transition: all ease-out 0.3s;
+    -webkit-transition: all ease-out 0.3s;
+    -moz-transition: all ease-out 0.3s;
+    -ms-transition: all ease-out 0.3s;
+    -o-transition: all ease-out 0.3s;
+}
+#berita-dibeli .inp-group button:hover{
+    cursor: pointer;
+    background: #439FD3;
+    border-color: #439FD3;
+    color: #fff;
+
+}
+.saldo-count{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    background: #f4f4f4;
+    margin-bottom: 20px;
+    padding: 16px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.saldo-count i{
+    font-size: 56px;
+    color: #439FD3;
+    opacity: 0.3;
+    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+}
+.saldo-count .text span{
+    font-weight: 700;
+}
+.saldo-count .text .jml-saldo{
+    font-size: 24px;
+}
+
+@media only screen and (max-width:768px){
+    .daftar-berita .news-item{
+        flex-direction: column;
+    }
+}
+/*UPDATE DASBOARD*/
